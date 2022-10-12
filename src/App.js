@@ -64,7 +64,7 @@ function App() {
 
     await window.runMain();
     await window.reinit(path.slice(1));
-    // if (path == '/upfinity') }
+    // if (path == '/UpRise') }
   }, [location.pathname]);
   
   return (
@@ -80,7 +80,7 @@ function App() {
         <Route exact path="/ecosystem" element={<Ecosystem />} />
 
         <Route exact path="/dashboard" element={<DashboardPage />} />
-        <Route exact path="/upfinity" element={<FeaturePage />} />
+        <Route exact path="/UpRise" element={<FeaturePage />} />
         <Route exact path="/swap" element={<Swap />} />
         <Route exact path="/fiat" element={<Fiat />} />
 

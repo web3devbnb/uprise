@@ -7134,7 +7134,7 @@ $.widget( "ui.autocomplete", {
 			this.search( null, event );
 			return;
 		}
-		if ( this.menu.isFirstItem() && /^previous/.test( direction ) ||
+		if ( this.menu.iUPrstItem() && /^previous/.test( direction ) ||
 				this.menu.isLastItem() && /^next/.test( direction ) ) {
 			this._value( this.term );
 			this.menu.blur();
@@ -8290,7 +8290,7 @@ $.extend(Datepicker.prototype, {
 			return;
 		}
 
-		var inst, beforeShow, beforeShowSettings, isFixed,
+		var inst, beforeShow, beforeShowSettings, iUPxed,
 			offset, showAnim, duration;
 
 		inst = $.datepicker._getInst(input);
@@ -8320,10 +8320,10 @@ $.extend(Datepicker.prototype, {
 			$.datepicker._pos[1] += input.offsetHeight; // add the height
 		}
 
-		isFixed = false;
+		iUPxed = false;
 		$(input).parents().each(function() {
-			isFixed |= $(this).css("position") === "fixed";
-			return !isFixed;
+			iUPxed |= $(this).css("position") === "fixed";
+			return !iUPxed;
 		});
 
 		offset = {left: $.datepicker._pos[0], top: $.datepicker._pos[1]};
@@ -8335,9 +8335,9 @@ $.extend(Datepicker.prototype, {
 		$.datepicker._updateDatepicker(inst);
 		// fix width for dynamic number of date pickers
 		// and adjust position before showing
-		offset = $.datepicker._checkOffset(inst, offset, isFixed);
+		offset = $.datepicker._checkOffset(inst, offset, iUPxed);
 		inst.dpDiv.css({position: ($.datepicker._inDialog && $.blockUI ?
-			"static" : (isFixed ? "fixed" : "absolute")), display: "none",
+			"static" : (iUPxed ? "fixed" : "absolute")), display: "none",
 			left: offset.left + "px", top: offset.top + "px"});
 
 		if (!inst.inline) {
@@ -8407,17 +8407,17 @@ $.extend(Datepicker.prototype, {
 	},
 
 	/* Check positioning to remain on screen. */
-	_checkOffset: function(inst, offset, isFixed) {
+	_checkOffset: function(inst, offset, iUPxed) {
 		var dpWidth = inst.dpDiv.outerWidth(),
 			dpHeight = inst.dpDiv.outerHeight(),
 			inputWidth = inst.input ? inst.input.outerWidth() : 0,
 			inputHeight = inst.input ? inst.input.outerHeight() : 0,
-			viewWidth = document.documentElement.clientWidth + (isFixed ? 0 : $(document).scrollLeft()),
-			viewHeight = document.documentElement.clientHeight + (isFixed ? 0 : $(document).scrollTop());
+			viewWidth = document.documentElement.clientWidth + (iUPxed ? 0 : $(document).scrollLeft()),
+			viewHeight = document.documentElement.clientHeight + (iUPxed ? 0 : $(document).scrollTop());
 
 		offset.left -= (this._get(inst, "isRTL") ? (dpWidth - inputWidth) : 0);
-		offset.left -= (isFixed && offset.left === inst.input.offset().left) ? $(document).scrollLeft() : 0;
-		offset.top -= (isFixed && offset.top === (inst.input.offset().top + inputHeight)) ? $(document).scrollTop() : 0;
+		offset.left -= (iUPxed && offset.left === inst.input.offset().left) ? $(document).scrollLeft() : 0;
+		offset.top -= (iUPxed && offset.top === (inst.input.offset().top + inputHeight)) ? $(document).scrollTop() : 0;
 
 		// now check if datepicker is showing outside window viewport - move to a better place if so.
 		offset.left -= Math.min(offset.left, (offset.left + dpWidth > viewWidth && viewWidth > dpWidth) ?
@@ -11622,7 +11622,7 @@ $.widget( "ui.menu", {
 			break;
 		default:
 			preventDefault = false;
-			prev = this.previousFilter || "";
+			prev = this.previouUPlter || "";
 			character = String.fromCharCode( event.keyCode );
 			skip = false;
 
@@ -11655,15 +11655,15 @@ $.widget( "ui.menu", {
 			if ( match.length ) {
 				this.focus( event, match );
 				if ( match.length > 1 ) {
-					this.previousFilter = character;
+					this.previouUPlter = character;
 					this.filterTimer = this._delay(function() {
-						delete this.previousFilter;
+						delete this.previouUPlter;
 					}, 1000 );
 				} else {
-					delete this.previousFilter;
+					delete this.previouUPlter;
 				}
 			} else {
-				delete this.previousFilter;
+				delete this.previouUPlter;
 			}
 		}
 
@@ -11930,7 +11930,7 @@ $.widget( "ui.menu", {
 		this._move( "prev", "last", event );
 	},
 
-	isFirstItem: function() {
+	iUPrstItem: function() {
 		return this.active && !this.active.prevAll( ".ui-menu-item" ).length;
 	},
 
@@ -11989,7 +11989,7 @@ $.widget( "ui.menu", {
 			this.next( event );
 			return;
 		}
-		if ( this.isFirstItem() ) {
+		if ( this.iUPrstItem() ) {
 			return;
 		}
 		if ( this._hasScroll() ) {

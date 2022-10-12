@@ -13,7 +13,7 @@ function Hero() {
   const taxTitle = (
     <div>
       <p>-3% Tax Reduction if</p>
-      <a href="https://upfinity.gitbook.io/upfinity/special-features/advanced-tax-algorithms#stabilizing-the-market-more">
+      <a href="https://UpRise.gitbook.io/UpRise/special-features/advanced-tax-algorithms#stabilizing-the-market-more">
         <div class="underline">
           buy right after the sell
         </div>
@@ -36,25 +36,25 @@ function Hero() {
       <div className="row" style={noMargin}>
         <div className="col-12 col-lg-8" style={{alignSelf: "center"}}>
           <div id="main" className="container" style={{padding: "0px"}}>
-            <h1>UpFinity:</h1>
-            <p>Building web3's leading <span className="typed" data-typed-items="Token, Ecosystem, Metaverse"></span></p>
+            <h1>UpRise:</h1>
+            <p>Building BSC a  leading <span className="typed" data-typed-items="Token, Ecosystem, Metaverse"></span></p>
             <p><span>30+</span> Unique Features and Useful Utilities in a <span>SINGLE</span> token</p>
             <div>
               <nav id="navbar" className="navbar" style={{ display: "inline-flex" }}>
                 <ul className="flex">
                   <li className="dropdown">
-                    <a  className="nav-link scrollto" href="https://bscscan.com/address/0x6CC5F09E46797189D18Ea8cfb3B1AaA4661280Ae" target="_tab">
+                    <a  className="nav-link scrollto" href="https://bscscan.com/address/Soon" target="_tab">
                       <div className="underline font-size">
-                        0x6CC5F09E46797189D18Ea8cfb3B1AaA4661280Ae
+                        Soon
                       </div>
-                      {/*<a id="UpfinityAdr" href="https://bscscan.com/address/0x6CC5F09E46797189D18Ea8cfb3B1AaA4661280Ae" target="_tab">*/}
+                      {/*<a id="UpRiseAdr" href="https://bscscan.com/address/Soon" target="_tab">*/}
                     </a>
                     {/*<ul>*/}
                     {/*  <li>*/}
                     {/*    <div className="row">*/}
                     {/*      <div style={{ display: "inline-block", overflow: "hidden" }}>Click</div>*/}
                     {/*      <div style={{ display: "inline-block", overflow: "hidden" }}>to copy address</div>*/}
-                    {/*      <a  id="copyUpfinityAdr" className="" onClick={() => window.copyAdr('copyUpfinityAdr', '0x6CC5F09E46797189D18Ea8cfb3B1AaA4661280Ae')}>*/}
+                    {/*      <a  id="copyUpRiseAdr" className="" onClick={() => window.copyAdr('copyUpRiseAdr', 'Soon')}>*/}
                     {/*        here*/}
                     {/*      </a>*/}
                           
@@ -66,13 +66,13 @@ function Hero() {
               </nav>
               <div className="row">
                 <div className="col-6">
-                  <a id="copyUpfinityAdr" className="button scrollto" onClick={() => window.copyAdr('copyUpfinityAdr', '0x6CC5F09E46797189D18Ea8cfb3B1AaA4661280Ae')}>
+                  <a id="copyUpRiseAdr" className="button scrollto" onClick={() => window.copyAdr('copyUpRiseAdr', 'Soon')}>
                     Copy Address
                   </a>
                 </div>
                 <div className="col-6">
-                  <a className="button scrollto" onClick={window.addUPF}>
-                    Add UPF in wallet
+                  <a className="button scrollto" onClick={window.addUP}>
+                    Add UP in wallet
                   </a>
                 </div>
               </div>
@@ -82,7 +82,7 @@ function Hero() {
                 <i className="bi bi-info-circle text-primary" title='
                 <div>
                   <p>-3% Tax Reduction if</p>
-                  <a href="https://upfinity.gitbook.io/upfinity/special-features/advanced-tax-algorithms#stabilizing-the-market-more">
+                  <a href="https://UpRise.gitbook.io/UpRise/special-features/advanced-tax-algorithms#stabilizing-the-market-more">
                     <div class="underline">
                       buy right after the sell
                     </div>
@@ -100,9 +100,9 @@ function Hero() {
             </div>
             <p>recommended slippage: buy 10+ / sell 14+</p>
             <div className="social-links" style={{fontSize:"30px"}}>
-              <a href="https://t.me/UpFinityTG" target="_tab" className="telegram"><i className="bi bi-telegram"></i></a>
-              <a href="https://twitter.com/UpFinityTW" target="_tab" className="twitter"><i className="bx bxl-twitter"></i></a>
-              <a href="https://github.com/UpFinityCrypto/UpFinityCrypto.github.io/blob/master/UpFinity.sol" target="_tab" className="twitter"><i className="bx bxl-github"></i></a>
+              <a href="https://t.me/UpRiseTG" target="_tab" className="telegram"><i className="bi bi-telegram"></i></a>
+              <a href="https://twitter.com/UpRiseTW" target="_tab" className="twitter"><i className="bx bxl-twitter"></i></a>
+              <a href="https://github.com/UpRiseCrypto/UpRiseCrypto.github.io/blob/master/UpRise.sol" target="_tab" className="twitter"><i className="bx bxl-github"></i></a>
             </div>
 
             <div className="row">
@@ -112,10 +112,10 @@ function Hero() {
             </div>
             <div className="row">
               <div className="col-6">
-                <a id="WhitePaperLink" href="https://upfinity.gitbook.io" className="button scrollto" target="_tab">WhitePaper</a>
+                <a id="WhitePaperLink" href="https://UpRise.gitbook.io" className="button scrollto" target="_tab">WhitePaper</a>
               </div>
               <div className="col-6">
-                <Link id="UpFinomicsLink" to="/upfinity" className="button scrollto">UpFinomics</Link>
+                <Link id="UPinomicsLink" to="/UpRise" className="button scrollto">UPinomics</Link>
               </div>
             </div>
           </div>

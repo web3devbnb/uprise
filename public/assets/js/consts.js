@@ -8,19 +8,19 @@ const adrs = {
   'router': '0x10ED43C718714eb63d5aA57B78B54704E256024E',
   'factory': '0xcA143Ce32Fe78f1f7019d7d551a6402fC5350c73',
 
-  'upf': '0x6CC5F09E46797189D18Ea8cfb3B1AaA4661280Ae',
+  'UP': 'Soon',
   'pair': '0xd3ab58A10eAB5F6e2523B53A78c6a8d378488C9a',
-  'reward': '0x373764c3deD9316Af3dA1434ccba32caeDeC09f5',
+  'reward': 'Soon',
   'freeair': '0x17f90D36E2B11999CBEbf5E36e09E7079Ea9e2a4',
   'airdrop': '0x53a1239a6C3c0cD6458C7Ee9c07815544a537004',
-  'nft': '0x24DF47F315E1ae831798d0B0403DbaB2B9f1a3aD',
-  'stake': '0xCeC0Ee6071571d77cFcD52244D7A1D875f71d32D',
+  'nft': '0x0000000000000000000000000000000000',
+  'stake': 'Soon',
 
   'random': '0x14a346835eDC99e8E82F2905BAef87Aa0fAc36f2',
   'lottery': '0xB48c64D9b8C9862522cb4971ddc0A01612d9F847',
 }
 
-const refLinkPrefix = 'https://upfinitycrypto.github.io?ref=';
+const refLinkPrefix = 'https://UpRisecrypto.github.io?ref=';
 let communityToken = "0x000000000000000000000000000000000000dEaD";
 
 const deadline = parseInt(Date.now() / 1000) + 1000000
@@ -201,7 +201,7 @@ abis['router'] = [
 
 abis['factory'] = [{"constant":true,"inputs":[{"internalType":"address","name":"","type":"address"},{"internalType":"address","name":"","type":"address"}],"name":"getPair","outputs":[{"internalType":"address","name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"}];
 
-abis['upf'] = [
+abis['UP'] = [
 {"constant":true,"inputs":[{"name":"","type":"address"}],"name":"balanceOf","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},
 { "constant": true, "inputs": [], "name": "totalSupply", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "payable": false, "stateMutability": "view", "type": "function" },
 {'inputs':[{'internalType':'address','name':'owner_','type':'address'},{'internalType':'address','name':'spender','type':'address'}],'name':'allowance','outputs':[{'internalType':'uint256','name':'','type':'uint256'}],'stateMutability':'view','type':'function'},

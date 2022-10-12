@@ -16,10 +16,10 @@ export default function Nft() {
         <p style={{fontSize: "40px"}}>Only Available below <span>2M MCAP</span></p>
         </div>
         <div className="wrap-address">
-          <a id="UpfinityNFTAdr" href="https://bscscan.com/address/0x24DF47F315E1ae831798d0B0403DbaB2B9f1a3aD" target="_tab">
-            0x24DF47F315E1ae831798d0B0403DbaB2B9f1a3aD
+          <a id="UpRiseNFTAdr" href="https://bscscan.com/address/0x0000000000000000000000000000000000" target="_tab">
+            0x0000000000000000000000000000000000
           </a>
-          <a id="copyUpfinityNFTAdr" className="button scrollto" onClick={() => {window.copyAdr('copyUpfinityNFTAdr', '0x24DF47F315E1ae831798d0B0403DbaB2B9f1a3aD');}}>
+          <a id="copyUpRiseNFTAdr" className="button scrollto" onClick={() => {window.copyAdr('copyUpRiseNFTAdr', '0x0000000000000000000000000000000000');}}>
             Copy NFT address to visualize it in your wallet
           </a>
           <p></p>
@@ -30,7 +30,7 @@ export default function Nft() {
           <div className="col-12 col-lg-6 text-justify content">
             <div className="section-title">
               <h2>Epic</h2>
-              <p>Need to hold at least: 2B <img src="assets/img/logo.png" className="small-icon"/> UPF</p>
+              <p>Need to hold at least: 2B <img src="assets/img/logo.png" className="small-icon"/> UP</p>
               <p>Price: 0.25 <img src="assets/img/trade/bin.ico" className="small-icon"/> BNB</p>
               <p>You will get <span>0.5%</span> Tax Reduction</p>
               <div className="row">
@@ -73,7 +73,7 @@ export default function Nft() {
           <div className="col-12 col-lg-6 text-justify content">
             <div className="section-title">
               <h2>Legendary</h2>
-              <p>Need to hold at least: 20B <img src="assets/img/logo.png" className="small-icon"/> UPF</p>
+              <p>Need to hold at least: 20B <img src="assets/img/logo.png" className="small-icon"/> UP</p>
               <p>Price: 0.5 <img src="assets/img/trade/bin.ico" className="small-icon"/> BNB</p>
               <p>You will get <span>1%</span> Tax Reduction</p>
               <div className="row">

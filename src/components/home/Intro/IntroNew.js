@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import classes from './IntroNew.module.css'
-import banner from '../../../assets/images/Upf Banner.png'
+import banner from '../../../assets/images/UP Banner.png'
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import Icons from '../Icons'
 import { AiOutlineCopy } from 'react-icons/ai'
@@ -24,8 +24,8 @@ function IntroNew() {
                 <div className={classes.introAbout}>
                     <h1> BUY. HOLD. EARN</h1>
                     <span> THE WORLD's MOST INNOVATIVE TOKEN </span>
-                    <p className={classes.accountNum}>0x6CC5F09E46797189D18Ea8cfb3B1AaA4661280Ae
-                        <span>   <CopyToClipboard text={"0x6CC5F09E46797189D18Ea8cfb3B1AaA4661280Ae"}>
+                    <p className={classes.accountNum}>Soon
+                        <span>   <CopyToClipboard text={"Soon"}>
                             {copied ? copiedIcon : copyIcon}
                         </CopyToClipboard>
                         </span>
@@ -47,7 +47,7 @@ function IntroNew() {
             </div>
 
 
-            {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#28A745" fill-opacity="1" d="M0,96L120,128C240,160,480,224,720,234.7C960,245,1200,203,1320,181.3L1440,160L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg> */}
+            {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0DCAF0" fill-opacity="1" d="M0,96L120,128C240,160,480,224,720,234.7C960,245,1200,203,1320,181.3L1440,160L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg> */}
         </div >
     )
 }

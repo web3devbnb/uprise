@@ -10,7 +10,7 @@ export function Header() {
       <i className="bi bi-list mobile-nav-toggle"></i>
       <Link to="/main" className="logo d-flex align-items-center no-underline">
         <img src="assets/img/logo_100.png" className="small-icon" alt="" style={{margin:"10px"}}/>
-        <h6 className="desktop">UpFinity</h6>
+        <h6 className="desktop">UpRise</h6>
       </Link>
         
       <nav id="navbar" className="navbar">
@@ -19,7 +19,7 @@ export function Header() {
           <li className="dropdown">
             <a className="nav-link scrollto" >Token<i className="bi bi-chevron-down"></i></a>
             <ul>
-              <li><Link to="/upfinity">Features</Link></li>
+              <li><Link to="/UpRise">Features</Link></li>
               <li><Link to="/swap">Swap</Link></li>
               <li><Link to="/fiat">Fiat</Link></li>
               <li><Link to="/staking">Staking</Link></li>
@@ -30,8 +30,7 @@ export function Header() {
             <a className="nav-link scrollto" >NFT<i className="bi bi-chevron-down"></i></a>
             <ul>
               <li><Link to="/nft">NFT Origin</Link></li>
-              <li><Link to="/mysterybox">NFT Mystery Box</Link></li>
-              <li><a >NFT MarketPlace<div className="spinner-border text-warning" role="status" style={menu}></div></a></li>
+              <li><a >NFT MarketPlace <span>(Soon!)</span></a></li>
 
             </ul>
           </li>
@@ -39,41 +38,39 @@ export function Header() {
             <a className="nav-link scrollto" >Play<i className="bi bi-chevron-down"></i></a>
             <ul>
               <li><Link to="/p2egame">P2E Game</Link></li>
-              <li><a>Lottery<div className="spinner-border text-warning" role="status" style={menu}></div></a></li>
-              <li><a>Trade Competition<div className="spinner-border text-warning" role="status" style={menu}></div></a></li>
-              <li><a>UPF & DOWN <div className="spinner-border text-warning" role="status" style={menu}></div></a></li>
+              <li><a href="https://UpRise.gitbook.io/UpRise/ecosystem/utility/autoshill/how-to-use-autoshill">Lotttery <span>(Soon!)</span></a></li>
+              <li><a href="https://UpRise.gitbook.io/UpRise/ecosystem/utility/autoshill/how-to-use-autoshill">Trade Competition <span>(Soon!)</span></a></li>
+              <li><a>UP & DOWN  <span>(Soon!)</span></a></li>
             </ul>
           </li>
           <li className="dropdown">
             <a  className="nav-link scrollto" >Utility<i className="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="https://upfinity.gitbook.io/upfinity/ecosystem/utility/autoshill/how-to-use-autoshill">Auto Shill <span>(Free 25$!)</span></a></li>
-              <li><a href="https://upfvote.com/">Coin Vote<div className="spinner-border text-warning" role="status" style={menu}></div></a></li>
-              <li><a>SAFU Checker<div className="spinner-border text-warning" role="status" style={menu}></div></a></li>
+              <li><a href="https://UpRise.gitbook.io/UpRise/ecosystem/utility/autoshill/how-to-use-autoshill">Shilling Competition <span>(Free 25$!)</span></a></li>
+              <li><a href="/">Coin Vote <span>(Soon!)</span></a></li>
             </ul>
           </li>
           <li className="dropdown">
             <a  className="nav-link scrollto" >About<i className="bi bi-chevron-down"></i></a>
             <ul>
               <li><Link to="/roadmap">Roadmap</Link></li>
-              <li><Link to="/team">Team</Link></li>
-              <li><a href="https://upfinity.gitbook.io">Whitepaper</a></li>
-              <li><Link to="/metaverse">Metaverse</Link></li>
+              <li><a href="">Whitepaper</a></li>
               <li><Link to="/faqs">FAQs</Link></li>
             </ul>
           </li>
-          <li><Link className="nav-link scrollto" to="/community">Community</Link></li>
           <li className="dropdown">
-            <a  className="nav-link scrollto">More<i className="bi bi-chevron-down"></i></a>
+            <a  className="nav-link scrollto" >Community<i className="bi bi-chevron-down"></i></a>
             <ul>
-              <li><Link to="/donations">Donations</Link></li>
-              <li><Link to="/airdrops">Airdrops</Link></li>
+              <li><a href="https://t.me/UpriseTG">Telegram <span>(JOIN!)</span></a></li>
+              <li><a href="https://reddit.com/u/Uprise">Reddit <span>(SUB!)</span></a></li>
+              <li><a href="https://UpRise.gitbook.io/UpRise/ecosystem/utility/autoshill/how-to-use-autoshill">Twitter <span>(Follow!)</span></a></li>
+              <li><a href="https://UpRise.gitbook.io/UpRise/ecosystem/utility/autoshill/how-to-use-autoshill">Announcements <span>(Follow!)</span></a></li>
             </ul>
           </li>
           <i id="curStatus" className="bi" title='
             <p id="cbStatus" class="white"></p>
             <p id="cbDuration" class="white"></p>
-            <a href="https://upfinity.gitbook.io/upfinity/special-features/advanced-tax-algorithms#stabilizing-the-market-more">
+            <a href="https://UpRise.gitbook.io/UpRise/special-features/advanced-tax-algorithms#stabilizing-the-market-more">
               <i class="bi bi-info-circle text-primary" style="font-size: 25px;"></i>
             </a>
           ' style={{ fontSize: "25px" }} ></i>
@@ -88,7 +85,7 @@ export function Header() {
       </nav>
 
       <div className="row listed" style={{display: "contents"}}>
-        <div style={{padding:"0px", margin:"5px"}}><span id="curPrice"></span>$ = 1B UPF</div>
+        <div style={{padding:"0px", margin:"5px"}}><span id="curPrice"></span>$ = UP</div>
         <Link to="/swap" className="button scrollto" style={{margin:"0px", marginRight:"5px"}}>BUY!</Link>
       </div>
 

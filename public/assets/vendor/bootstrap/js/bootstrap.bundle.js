@@ -2208,7 +2208,7 @@
 
 
   function getContainingBlock(element) {
-    var isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') !== -1;
+    var iUPrefox = navigator.userAgent.toLowerCase().indexOf('firefox') !== -1;
     var isIE = navigator.userAgent.indexOf('Trident') !== -1;
 
     if (isIE && isHTMLElement(element)) {
@@ -2227,7 +2227,7 @@
       // create a containing block.
       // https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block#identifying_the_containing_block
 
-      if (css.transform !== 'none' || css.perspective !== 'none' || css.contain === 'paint' || ['transform', 'perspective'].indexOf(css.willChange) !== -1 || isFirefox && css.willChange === 'filter' || isFirefox && css.filter && css.filter !== 'none') {
+      if (css.transform !== 'none' || css.perspective !== 'none' || css.contain === 'paint' || ['transform', 'perspective'].indexOf(css.willChange) !== -1 || iUPrefox && css.willChange === 'filter' || iUPrefox && css.filter && css.filter !== 'none') {
         return currentNode;
       } else {
         currentNode = currentNode.parentNode;
@@ -3351,9 +3351,9 @@
   // Composite means it takes into account transforms as well as layout.
 
 
-  function getCompositeRect(elementOrVirtualElement, offsetParent, isFixed) {
-    if (isFixed === void 0) {
-      isFixed = false;
+  function getCompositeRect(elementOrVirtualElement, offsetParent, iUPxed) {
+    if (iUPxed === void 0) {
+      iUPxed = false;
     }
 
     var isOffsetParentAnElement = isHTMLElement(offsetParent);
@@ -3369,7 +3369,7 @@
       y: 0
     };
 
-    if (isOffsetParentAnElement || !isOffsetParentAnElement && !isFixed) {
+    if (isOffsetParentAnElement || !isOffsetParentAnElement && !iUPxed) {
       if (getNodeName(offsetParent) !== 'body' || // https://github.com/popperjs/popper-core/issues/1078
       isScrollParent(documentElement)) {
         scroll = getNodeScroll(offsetParent);
@@ -3509,7 +3509,7 @@
         attributes: {},
         styles: {}
       };
-      var effectCleanupFns = [];
+      var effectCleanUPns = [];
       var isDestroyed = false;
       var instance = {
         state: state,
@@ -3633,7 +3633,7 @@
               effect = _ref3.effect;
 
           if (typeof effect === 'function') {
-            var cleanupFn = effect({
+            var cleanUPn = effect({
               state: state,
               name: name,
               instance: instance,
@@ -3642,16 +3642,16 @@
 
             var noopFn = function noopFn() {};
 
-            effectCleanupFns.push(cleanupFn || noopFn);
+            effectCleanUPns.push(cleanUPn || noopFn);
           }
         });
       }
 
       function cleanupModifierEffects() {
-        effectCleanupFns.forEach(function (fn) {
+        effectCleanUPns.forEach(function (fn) {
           return fn();
         });
-        effectCleanupFns = [];
+        effectCleanUPns = [];
       }
 
       return instance;

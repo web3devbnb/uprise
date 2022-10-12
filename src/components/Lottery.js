@@ -15,7 +15,7 @@ function Lottery() {
     <section id="Lottery">
       <div className="section-title">
         <h2>Lottery (TEST)</h2>
-        <p>Bet <img src="assets/img/logo.png" className="small-icon" />UPF, Win <img src="assets/img/logo.png" className="small-icon" />UPF</p>
+        <p>Bet <img src="assets/img/logo.png" className="small-icon" />UP, Win <img src="assets/img/logo.png" className="small-icon" />UP</p>
         <p>Lottery Contract Address</p>
         <a href="https://bscscan.com/address/0xB48c64D9b8C9862522cb4971ddc0A01612d9F847" target="_tab">
           0xB48c64D9b8C9862522cb4971ddc0A01612d9F847
@@ -30,7 +30,7 @@ function Lottery() {
             </div>
             <div className="col-12 col-lg-6">
               <p>Your Balance</p>
-              <span id="totalStaked" className="text-center" style={font2_5em}></span><img src="assets/img/logo.png" className="small-icon" />UPF
+              <span id="totalStaked" className="text-center" style={font2_5em}></span><img src="assets/img/logo.png" className="small-icon" />UP
             </div>
           </div>
         </div>

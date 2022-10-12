@@ -90,7 +90,7 @@ function Roadmap() {
         </div>
         <div className="cssanimations cd-timeline-content bounce-in">
           <h2>2023</h2>
-          <div><span>To the UpFinity and beyond</span></div>
+          <div><span>To the UpRise and beyond</span></div>
         </div>
       </div>
 

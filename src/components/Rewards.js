@@ -15,12 +15,12 @@ function Rewards() {
 
       <div className="section-title">
         <h2>Rewards</h2>
-        <p>Buy/Hold <img src="assets/img/logo.png" className="small-icon"/>UPF, Earn <img src="assets/img/trade/bin.ico" className="small-icon"/>BNB</p>
+        <p>Buy/Hold <img src="assets/img/logo.png" className="small-icon"/>UP, Earn <img src="assets/img/trade/bin.ico" className="small-icon"/>BNB</p>
         <p>Total Rewards Left</p>
         <p><span id="totalUnclaimed" className="text-center" style={font3em}></span><img src="assets/img/trade/bin.ico" className="small-icon"/>BNB</p>
         <p>Rewards Contract Address</p>
-        <a href="https://bscscan.com/address/0x373764c3deD9316Af3dA1434ccba32caeDeC09f5" target="_tab">
-          0x373764c3deD9316Af3dA1434ccba32caeDeC09f5
+        <a href="https://bscscan.com/address/Soon" target="_tab">
+          Soon
         </a>
       </div>
 

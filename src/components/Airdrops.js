@@ -57,11 +57,11 @@ function Airdrops() {
           <div className="col-lg-6 text-justify content">
             <h3>Rules</h3>
             <ul className="ul-no-style">
-              <li><i className="bx bx-check-double text-color-primary"></i>Should be <span>new wallet</span> with <span>NO</span> UPFINITY TOKEN</li>
+              <li><i className="bx bx-check-double text-color-primary"></i>Should be <span>new wallet</span> with <span>NO</span> UpRise TOKEN</li>
               <li><i className="bx bx-check-double text-color-primary"></i>Can choose <span>ONLY 1</span> option</li>
               <li><i className="bx bx-check-double text-color-primary"></i>Tokens will be <span>vested</span> until 21.12.07 1PM UTC (Auto unlock will be set near that time to decrease gas fee)</li>
-              <li><i className="bx bx-check-double text-color-primary"></i>Airdropped wallet <span>cannot trade with UpFinity</span> until vesting period</li>
-              <li><i className="bx bx-check-double text-color-primary"></i>Details in the Telegram <a href="https://t.me/UpFinityTG" target="_tab" className="telegram"><i className="bi bi-telegram"></i></a></li>
+              <li><i className="bx bx-check-double text-color-primary"></i>Airdropped wallet <span>cannot trade with UpRise</span> until vesting period</li>
+              <li><i className="bx bx-check-double text-color-primary"></i>Details in the Telegram <a href="https://t.me/UpRiseTG" target="_tab" className="telegram"><i className="bi bi-telegram"></i></a></li>
             </ul>
             
             <h4>Airdrop Options</h4>

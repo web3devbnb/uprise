@@ -40,7 +40,7 @@ export function Buy() {
               <div className="sc-jSFjdj sc-gKAaRy kJmatq iIdAKa">
                 <h2 color="text" className="sc-gtsrHT sc-kLojOw iGtzpP jDXLmf text-center">Buy</h2>
                 <div className="sc-jSFjdj sc-gKAaRy kJmatq togOu text-center" style={{margin: "10px"}}>
-                  <div color="textSubtle" fontSize="14px" className="sc-gtsrHT llSJBl"><span>Buy</span> UPF easily / instantly</div>
+                  <div color="textSubtle" fontSize="14px" className="sc-gtsrHT llSJBl"><span>Buy</span> UP easily / instantly</div>
                   <div>Buy Status: <span id="BuyStatus"></span></div>
                 </div>
               </div>
@@ -60,7 +60,7 @@ export function Buy() {
                     </div>
                   </div>
                   <div className="sc-fVnRWS idBnak" style={{display: "flex"}}>
-                    <input id="buyInput" title="Type BNB Amount do buy UPF" className="token-amount-input no-margin text-left" inputMode="decimal" autoComplete="off" autoCorrect="off" type="text" pattern="^[0-9]*[.,]?[0-9]*$" placeholder="0.0" minLength="1" maxLength="79" spellCheck="false" defaultValue="" style={{caretColor: "white", color: "white"}}/>
+                    <input id="buyInput" title="Type BNB Amount do buy UP" className="token-amount-input no-margin text-left" inputMode="decimal" autoComplete="off" autoCorrect="off" type="text" pattern="^[0-9]*[.,]?[0-9]*$" placeholder="0.0" minLength="1" maxLength="79" spellCheck="false" defaultValue="" style={{caretColor: "white", color: "white"}}/>
                     <button className="sc-hKFxyN jYLfuR sc-iJKVRt eyGnew open-currency-select-button no-margin" scale="sm" style={{justifyContent: "space-between", border: "0px", backgroundColor: "#00000000"}}>
                       <div className="sc-jSFjdj sc-gKAaRy kJmatq eqGhLO no-margin" style={{justifyContent: "space-between", display: "flex", alignItems: "center"}}>
                         <img id="BNBlogo" src="assets/img/trade/bin.ico" style={{width: "30px"}}/>
@@ -77,7 +77,7 @@ export function Buy() {
                       <div fontSize="14px" color="text" className="sc-gtsrHT jFEWVt no-margin">To (Estimated)</div>
                       <div fontSize="14px" color="text" className="sc-gtsrHT jFEWVt no-margin" style={{display: "inline", cursor: "pointer"}}>
                         Balance:
-                        <div id="UPFbalance" style={{display: "inline"}}></div>
+                        <div id="UPbalance" style={{display: "inline"}}></div>
                       </div>
                     </div>
                   </div>
@@ -95,13 +95,13 @@ export function Buy() {
             display: "flex",
             alignItems: "center",
                       }}>
-                        <img id="UPFlogo" src="assets/img/logo.png" style={width30px}/>
-                        <div id="UPFtarget" color="text" className="sc-gtsrHT MlLjM" style={{
+                        <img id="UPlogo" src="assets/img/logo.png" style={width30px}/>
+                        <div id="UPtarget" color="text" className="sc-gtsrHT MlLjM" style={{
             display: "flex",
             textAlign: "left",
             margin: "10px",
             color: "#aaaaaa",
-                        }}>UPF</div>
+                        }}>UP</div>
                       </div>
                     </button>
                   </div>
@@ -125,7 +125,7 @@ export function Buy() {
                 alignItems: "center",
                 border: "0px",
                 borderRadius: "16px",
-                boxShadow: "0px 0px 5px 5px #28a74577",
+                boxShadow: "0px 0px 5px 5px #0DCAF077",
                 cursor: "pointer",
                 display: "inline-flex",
                 fontFamily: "inherit",
@@ -141,22 +141,22 @@ export function Buy() {
                 margin: "10px 0px",
                 color: "white",
                 width: "95%"
-                    }} onClick={window.fbuyUPF}>Swap</a>
+                    }} onClick={window.fbuyUP}>Swap</a>
                   </div>
                 </div>
               </div>
               <div id="swapResult"></div>
               <div>
-                <a className="scrollto" onClick={window.addUPF}>
-                  Click here to add UPF in wallet
+                <a className="scrollto" onClick={window.addUP}>
+                  Click here to add UP in wallet
                 </a>
               </div>
               <div>
                 You could also buy at:
-                <a id="PanCakeSwapLink" href="https://pancakeswap.finance/swap?outputCurrency=0x6CC5F09E46797189D18Ea8cfb3B1AaA4661280Ae" className="scrollto">
+                <a id="PanCakeSwapLink" href="https://pancakeswap.finance/swap?outputCurrency=Soon" className="scrollto">
                   <img src="assets/img/trade/pcs_100.ico" style={width30px}/>
                 </a>
-                <a id="PoocoinSwapLink" href="https://poocoin.app/swap/?outputCurrency=0x6CC5F09E46797189D18Ea8cfb3B1AaA4661280Ae" className="scrollto">
+                <a id="PoocoinSwapLink" href="https://poocoin.app/swap/?outputCurrency=Soon" className="scrollto">
                   <img src="assets/img/trade/poo_100.png" style={width30px}/>
                 </a>
               </div>
@@ -165,7 +165,7 @@ export function Buy() {
                 <a id="DextoolsChartLink" href="https://www.dextools.io/app/bsc/pair-explorer/0xd3ab58a10eab5f6e2523b53a78c6a8d378488c9a" className="scrollto">
                   <img src="assets/img/trade/dext_100.ico" style={width30px}/>
                 </a>
-                <a id="PoocoinChartLink" href="https://poocoin.app/tokens/0x6cc5f09e46797189d18ea8cfb3b1aaa4661280ae" className="scrollto">
+                <a id="PoocoinChartLink" href="https://poocoin.app/tokens/Soon" className="scrollto">
                   <img src="assets/img/trade/poo_100.png" style={width30px}/>
                 </a>
                 <div><Link to="/fiat">Buy BNB/BUSD with Fiat!</Link></div>
@@ -198,7 +198,7 @@ export function Sell() {
               <div className="sc-jSFjdj sc-gKAaRy kJmatq iIdAKa">
                 <h2 color="text" className="sc-gtsrHT sc-kLojOw iGtzpP jDXLmf text-center">Sell</h2>
                 <div className="sc-jSFjdj sc-gKAaRy kJmatq togOu text-center" style={{ margin: "10px" }}>
-                  <div color="textSubtle" fontSize="14px" className="sc-gtsrHT llSJBl"><span>Sell</span> UPF easily / instantly</div>
+                  <div color="textSubtle" fontSize="14px" className="sc-gtsrHT llSJBl"><span>Sell</span> UP easily / instantly</div>
                   <div>Sell Status: <span id="SellStatus"></span></div>
                   <a id="approveRouter" className="button scrollto"></a>
                 </div>
@@ -214,7 +214,7 @@ export function Sell() {
                       <div fontSize="14px" color="text" className="sc-gtsrHT jFEWVt no-margin">From</div>
                       <div fontSize="14px" color="text" className="sc-gtsrHT jFEWVt no-margin" style={{ display: "inline", cursor: "pointer" }}>
                         Balance:
-                        <div id="UPFbalance" className="no-margin" style={{ display: "inline" }}></div>
+                        <div id="UPbalance" className="no-margin" style={{ display: "inline" }}></div>
                       </div>
                     </div>
                   </div>
@@ -223,8 +223,8 @@ export function Sell() {
                     <button className="sc-hKFxyN jYLfuR sc-iJKVRt eyGnew open-currency-select-button no-margin" scale="sm" style={{ justifyContent: "space-between", border: "0px", backgroundColor: "#00000000" }}>
                       <div className="sc-jSFjdj sc-gKAaRy kJmatq eqGhLO no-margin" style={{ justifyContent: "space-between", display: "flex", alignItems: "center" }}>
                         
-                        <img id="UPFlogo" src="assets/img/logo.png" style={{ width: "30px" }} />
-                        <div id="UPFtarget" color="text" className="sc-gtsrHT MlLjM" style={{ display: "flex", textAlign: "left", margin: "10px", color: "#aaaaaa" }}>UPF</div>
+                        <img id="UPlogo" src="assets/img/logo.png" style={{ width: "30px" }} />
+                        <div id="UPtarget" color="text" className="sc-gtsrHT MlLjM" style={{ display: "flex", textAlign: "left", margin: "10px", color: "#aaaaaa" }}>UP</div>
                       </div>
                     </button>
                   </div>
@@ -277,7 +277,7 @@ export function Sell() {
                       alignItems: "center",
                       border: "0px",
                       borderRadius: "16px",
-                      boxShadow: "0px 0px 5px 5px #28a74577",
+                      boxShadow: "0px 0px 5px 5px #0DCAF077",
                       cursor: "pointer",
                       display: "inline-flex",
                       fontFamily: "inherit",
@@ -293,22 +293,22 @@ export function Sell() {
                       margin: "10px 0px",
                       color: "white",
                       width: "95%"
-                    }} onClick={window.fsellUPF}>Swap</a>
+                    }} onClick={window.fsellUP}>Swap</a>
                   </div>
                 </div>
               </div>
               <div id="sellResult"></div>
               {/*<div>*/}
-              {/*  <a className="scrollto" onClick={window.addUPF}>*/}
-              {/*    Click here to add UPF in wallet*/}
+              {/*  <a className="scrollto" onClick={window.addUP}>*/}
+              {/*    Click here to add UP in wallet*/}
               {/*  </a>*/}
               {/*</div>*/}
               {/*<div>*/}
               {/*  You could also buy at:*/}
-              {/*  <a id="PanCakeSwapLink" href="https://pancakeswap.finance/swap?outputCurrency=0x6CC5F09E46797189D18Ea8cfb3B1AaA4661280Ae" className="scrollto">*/}
+              {/*  <a id="PanCakeSwapLink" href="https://pancakeswap.finance/swap?outputCurrency=Soon" className="scrollto">*/}
               {/*    <img src="assets/img/trade/pcs.ico" style={width30px} />*/}
               {/*  </a>*/}
-              {/*  <a id="PoocoinSwapLink" href="https://poocoin.app/swap/?outputCurrency=0x6CC5F09E46797189D18Ea8cfb3B1AaA4661280Ae" className="scrollto">*/}
+              {/*  <a id="PoocoinSwapLink" href="https://poocoin.app/swap/?outputCurrency=Soon" className="scrollto">*/}
               {/*    <img src="assets/img/trade/poo.png" style={width30px} />*/}
               {/*  </a>*/}
               {/*</div>*/}
@@ -317,7 +317,7 @@ export function Sell() {
               {/*  <a id="DextoolsChartLink" href="https://www.dextools.io/app/bsc/pair-explorer/0xd3ab58a10eab5f6e2523b53a78c6a8d378488c9a" className="scrollto">*/}
               {/*    <img src="assets/img/trade/dext.ico" style={width30px} />*/}
               {/*  </a>*/}
-              {/*  <a id="PoocoinChartLink" href="https://poocoin.app/tokens/0x6cc5f09e46797189d18ea8cfb3b1aaa4661280ae" className="scrollto">*/}
+              {/*  <a id="PoocoinChartLink" href="https://poocoin.app/tokens/Soon" className="scrollto">*/}
               {/*    <img src="assets/img/trade/poo.png" style={width30px} />*/}
               {/*  </a>*/}
               {/*  <div><Link to="/fiat">Buy BNB/BUSD with Fiat!</Link></div>*/}

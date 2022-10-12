@@ -17,18 +17,18 @@ function Ecosystem() {
 
         <div className="section-title">
           <h2>Ecosystem</h2>
-          <p>Actual <span>USECASE</span> of the UpFinity</p>
+          <p>Actual <span>USECASE</span> of the UpRise</p>
         </div>
 
         <div className="row">
           <div className="col-12 col-lg-4 text-justify content">
             <div className="section-title">
-              <img className="ecosystemImage" src="assets/img/ecosystemLogos/UPFLOGO.png"/>
+              <img className="ecosystemImage" src="assets/img/ecosystemLogos/UPLOGO.png"/>
               <h2>Token</h2>
               <h6>20+ Features. 10+ Utilities. All in One</h6>
               <p>Enjoy all the things and get <span>profit!</span></p>
 
-              <p><Link id="tokenLink" to="/upfinity" className="button scrollto">UpFinity</Link></p>
+              <p><Link id="tokenLink" to="/UpRise" className="button scrollto">UpRise</Link></p>
             </div>
           </div>
           <div className="col-12 col-lg-4 text-justify content">
@@ -62,8 +62,8 @@ function Ecosystem() {
             <div className="section-title">
               <img className="ecosystemImage" src="assets/img/ecosystemLogos/Staking.png"/>
               <h2>Staking</h2>
-              <h6>Buy UPF. Stake UPF. Earn UPF</h6>
-              <p>Stake your UPF to get much more UPF rewards!</p>
+              <h6>Buy UP. Stake UP. Earn UP</h6>
+              <p>Stake your UP to get much more UP rewards!</p>
               <p><Link to="/Staking" className="button scrollto">Staking</Link></p>
             </div>
           </div>
@@ -71,8 +71,8 @@ function Ecosystem() {
             <div className="section-title">
               <img className="ecosystemImage" src="assets/img/ecosystemLogos/Rewards.png"/>
               <h2>Rewards</h2>
-              <h6>Buy UPF. Hold UPF. Earn BNB</h6>
-              <p>Buy/Hold UPF to get much more BNB Rewards!</p>
+              <h6>Buy UP. Hold UP. Earn BNB</h6>
+              <p>Buy/Hold UP to get much more BNB Rewards!</p>
               <p><Link to="/Rewards" className="button scrollto">Rewards</Link></p>
             </div>
           </div>
@@ -100,7 +100,7 @@ function Ecosystem() {
               <h2>Coin Vote</h2>
               <h6>Vote for Coin. No bots. Real Metric</h6>
               <p>Vote for the next "buy the dip" reward token!</p>
-              <p><a id="coinVoteLink" href="https://upfvote.com" className="button scrollto button-upgrade">Upgrading!</a></p>
+              <p><a id="coinVoteLink" href="https://UPvote.com" className="button scrollto button-upgrade">Upgrading!</a></p>
             </div>
           </div>
 
@@ -110,15 +110,15 @@ function Ecosystem() {
               <img className="ecosystemImage" src="assets/img/ecosystemLogos/Marketplace.png"/>
               <h2>Marketplace</h2>
               <h6>Buy NFT. Sell NFT. Trade NFT</h6>
-              <p>The place for all your NFTs. Hold UPF and earn a percentage of every tx fee!</p>
+              <p>The place for all your NFTs. Hold UP and earn a percentage of every tx fee!</p>
               <p><Link id="MarketplaceLink" to="" className="button button-soon scrollto">Coming Soon</Link></p>
             </div>
           </div>
           <div className="col-12 col-lg-4 text-justify content">
             <div className="section-title">
               <img className="ecosystemImage" src="assets/img/ecosystemLogos/P2E_Game.png"/>
-              <h2>Upfinity wars</h2>
-              <h6>Play Games. Enjoy the Ride. Earn UPF</h6>
+              <h2>UpRise wars</h2>
+              <h6>Play Games. Enjoy the Ride. Earn UP</h6>
               <p>Join the competition to be the #1 rocketcycle rider!</p>
               <p><Link id="P2ELink" to="" className="button button-soon scrollto">Coming Soon</Link></p>
             </div>
@@ -138,25 +138,25 @@ function Ecosystem() {
               <img className="ecosystemImage" src="assets/img/ecosystemLogos/Safu_Checker.png"/>
               <h2>SAFU Checker</h2>
               <h6>don't get rugpulled again!</h6>
-              <p>A top of the line honeypot and rugpull scanner FREE for UPF holders</p>
+              <p>A top of the line honeypot and rugpull scanner FREE for UP holders</p>
               <p><Link id="MysteryLink" to="" className="button button-soon scrollto">Coming Soon</Link></p>
             </div>
           </div>
           <div className="col-12 col-lg-4 text-justify content">
             <div className="section-title">
               <img className="ecosystemImage" src="assets/img/ecosystemLogos/merchandise.png"/>
-              <h2>UPF Store</h2>
+              <h2>UP Store</h2>
               <h6>Shop your favorite brands</h6>
-              <p>A blockchain store with all cryptocurrencies accepted, with discount for UPF holders</p>
+              <p>A blockchain store with all cryptocurrencies accepted, with discount for UP holders</p>
               <p><Link id="MysteryLink" to="" className="button button-soon scrollto">Coming Soon</Link></p>
             </div>
           </div>
           <div className="col-12 col-lg-4 text-justify content">
             <div className="section-title">
               <img className="ecosystemImage" src="assets/img/ecosystemLogos/card.png"/>
-              <h2>UPF Card</h2>
+              <h2>UP Card</h2>
               <h6>Load.Pay.Earn</h6>
-              <p>Pay with crypto anywhere and everywhere, bigger cashbacks and rewards for UPF holders</p>
+              <p>Pay with crypto anywhere and everywhere, bigger cashbacks and rewards for UP holders</p>
               <p><Link id="MysteryLink" to="" className="button button-soon scrollto">Coming Soon</Link></p>
             </div>
           </div>

@@ -445,7 +445,7 @@
   }
 
   .accordion-button:hover {
-    color: #28a745;
+    color: #0DCAF0;
     z-index: 2;
   }
 
@@ -471,7 +471,7 @@ form {
     background: none;
     font-size: 16px;
     padding: 0 20px;
-    background: #28a745;
+    background: #0DCAF0;
     color: #ffffff;
     transition: 0.3s;
     width: 200px;
@@ -871,7 +871,7 @@ img {
       }
 
         .sidebar-nav .nav-content a.active i {
-          background-color: #28a745;
+          background-color: #0DCAF0;
         }
 
 /*--------------------------------------------------------------
@@ -919,11 +919,11 @@ img {
     }
 
     .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-      color: #28a745;
+      color: #0DCAF0;
     }
 
   .navbar .getstarted, .navbar .getstarted:focus {
-    background: #28a745;
+    background: #0DCAF0;
     padding: 8px 20px;
     margin-left: 30px;
     border-radius: 4px;
@@ -948,7 +948,7 @@ img {
     background: #333;
     transition: 0.3s;
     border-radius: 4px;
-    box-shadow: 0px 0px 5px 5px #28a74577;
+    box-shadow: 0px 0px 5px 5px #0DCAF077;
   }
 
     .navbar .dropdown ul li {
@@ -967,7 +967,7 @@ img {
       }
 
       .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-        color: #28a745;
+        color: #0DCAF0;
       }
 
   .navbar .dropdown:hover > ul {
@@ -1054,7 +1054,7 @@ img {
     background-color: #262626;
     overflow-y: auto;
     transition: 0.3s;
-    box-shadow: 0px 0px 5px 5px #28a74577;
+    box-shadow: 0px 0px 5px 5px #0DCAF077;
   }
 
   .navbar-mobile a, .navbar-mobile a:focus {
@@ -1064,7 +1064,7 @@ img {
   }
 
     .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-      color: #28a745;
+      color: #0DCAF0;
     }
 
   .navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
@@ -1080,7 +1080,7 @@ img {
     opacity: 1;
     visibility: visible;
     background: #262626;
-    box-shadow: 0px 0px 5px 5px #28a74577;
+    box-shadow: 0px 0px 5px 5px #0DCAF077;
   }
 
     .navbar-mobile .dropdown ul li {
@@ -1096,7 +1096,7 @@ img {
       }
 
       .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-        color: #28a745;
+        color: #0DCAF0;
       }
 
   .navbar-mobile .dropdown > .dropdown-active {
@@ -1177,7 +1177,7 @@ red {
 }
 
 green {
-  color: #28a745;
+  color: #0DCAF0;
 }
 
 .day {
@@ -1296,5 +1296,5 @@ day-h1 {
 }
 
 .ui-widget-content a {
-  color: #28a745;
+  color: #0DCAF0;
 }

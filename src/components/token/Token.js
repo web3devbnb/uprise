@@ -63,7 +63,7 @@ function Token() {
                     </div>
 
                     <div href='#' className='deg315'>
-                        <p>UPF</p>
+                        <p>UP</p>
                         <img src={staking} alt="staking" />
                     </div>
                 </div>

@@ -80,7 +80,7 @@ function FAQs() {
                 <i className="bx bx-chevron-up icon-close"></i>
               </a>
               <div id="faq-list-3" className="collapse" data-bs-parent=".faq-list">
-                <p>I have done the KYC Verification! (Find 'UpFinity' in <a href="https://www.dessertswap.finance/dessertdoxxed.html">DessertDoxxed</a>)</p>
+                <p>I have done the KYC Verification! (Find 'UpRise' in <a href="https://www.dessertswap.finance/dessertdoxxed.html">DessertDoxxed</a>)</p>
               </div>
             </li>
             

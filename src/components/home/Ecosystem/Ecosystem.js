@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import classes from './Ecosystem.module.css'
 import "../../../generalStylesheet.css"
-import token from '../../../assets/images/UPFLOGO.png'
+import token from '../../../assets/images/UPLOGO.png'
 import nft from '../../../assets/images/NFTs.png'
 import coinVote from '../../../assets/images/Coin_Vote.png'
 import staking from '../../../assets/images/Staking.png'
@@ -40,14 +40,14 @@ function Ecosystem() {
                     {/* <img src={ecosystem} alt="ecosystem" /> */}
                     <h1>ECOSYSTEM</h1>
                 </div>
-                <p>ACTUAL USECASE OF UPFINITY</p>
+                <p>ACTUAL USECASE OF UpRise</p>
 
                 <div className={classes.itemsContainer}>
                     <div className={classes.items}>
                         <button className={classes.ecosystemBtn}>  <img src={token} alt="token" /> </button>
                         <h3>TOKEN</h3>
                         <p>30+ FEATURES AND UTILITIES IN A SINGLE TOKEN</p>
-                        <p>$UPF (Upfinity) is the multi-feature governance token of "The Upfinity" ecosystem.</p>
+                        <p>$UP (UpRise) is the multi-feature governance token of "The UpRise" ecosystem.</p>
                     </div>
                     <div className={classes.items}>
                         <button className={classes.ecosystemBtn}>     <img src={nft} alt="nft" /> </button>
@@ -59,13 +59,13 @@ function Ecosystem() {
                         <button className={classes.ecosystemBtn}>   <img src={coinVote} alt="coinVote" /> </button>
                         <h3>COIN VOTE</h3>
                         <p>CHECK WHAT IS REALLY FAMOUS</p>
-                        <p>We bringing a revolution to current coin voting websites.Very excited to talk about our one of a kind community driven Coin Leaderboard where only authenticated wallets will be able to vote.Making it a lot harder for bots or macros to participate. The best part is that whenever a coin wins, our reward tokens go to that coin and at the same time spread to UPF holders giving the winning token and UPF holders a massive boost!</p>
+                        <p>We bringing a revolution to current coin voting websites.Very excited to talk about our one of a kind community driven Coin Leaderboard where only authenticated wallets will be able to vote.Making it a lot harder for bots or macros to participate. The best part is that whenever a coin wins, our reward tokens go to that coin and at the same time spread to UP holders giving the winning token and UP holders a massive boost!</p>
                     </div>
                     <div className={classes.items}>
                         <button className={classes.ecosystemBtn}>   <img src={staking} alt="staking" /> </button>
                         <h3>STAKING</h3>
                         <p>N/a </p>
-                        <p>Stake your UPF to get much more rewards!</p>
+                        <p>Stake your UP to get much more rewards!</p>
                     </div>
 
                 </div>
@@ -74,19 +74,19 @@ function Ecosystem() {
                         <button className={classes.ecosystemBtn}>  <img src={marketplace} alt="marketplace" /> </button>
                         <h3>MARKETPLACE</h3>
                         <p>N/a</p>
-                        <p>UpFinity marketplace will be the place to trade all your NFTs. It will reward UPF holders with a percentage of the tx fee!</p>
+                        <p>UpRise marketplace will be the place to trade all your NFTs. It will reward UP holders with a percentage of the tx fee!</p>
                     </div>
                     <div className={classes.items}>
                         <button className={classes.ecosystemBtn}>  <img src={p2e} alt="p2e" /> </button>
                         <h3>P2E GAME</h3>
                         <p>N/a</p>
-                        <p>Enjoy gaming? Want to turn your skills into money? Coming soon, a fun easy to play, yet challenging game on our platform, where you can earn UPF based on your score and play time. So get ready to PLAY TO WIN!</p>
+                        <p>Enjoy gaming? Want to turn your skills into money? Coming soon, a fun easy to play, yet challenging game on our platform, where you can earn UP based on your score and play time. So get ready to PLAY TO WIN!</p>
                     </div>
                     <div className={classes.items}>
                         <button className={classes.ecosystemBtn}>  <img src={mysterybox} alt="mysterybox" /> </button>
                         <h3>MYSTERY BOX</h3>
                         <p>N/a</p>
-                        <p>Available to be purchased with $UPF. Mystery Boxes will happen in seasons and give you a chance to win very rare NFTs that will come with unique features. So look out for this and try your luck, you might be the next owner of an Emerald NFT!</p>
+                        <p>Available to be purchased with $UP. Mystery Boxes will happen in seasons and give you a chance to win very rare NFTs that will come with unique features. So look out for this and try your luck, you might be the next owner of an Emerald NFT!</p>
                     </div>
                     <div className={classes.items}>
                         <button className={classes.ecosystemBtn}>  <img src={nftfarming} alt="nftfarming" /> </button>

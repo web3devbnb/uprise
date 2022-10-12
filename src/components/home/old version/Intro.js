@@ -16,14 +16,14 @@ function Intro() {
         <div className={classes.intro}>
 
             <div className={classes.introDescription}>
-                <h1><span className={classes.upfinityName}>UPFINITY:</span> BUY, HOLD, EARN</h1>
+                <h1><span className={classes.UpRiseName}>UpRise:</span> BUY, HOLD, EARN</h1>
                 <p>
                     <span> THE WORLD's MOST </span>
                     <span>INNOVATIVE </span>
                     <span>TOKEN</span>
                 </p>
-                <p className={classes.accountNum}>0x6CC5F09E46797189D18Ea8cfb3B1AaA4661280Ae
-                    <CopyToClipboard text={"0x6CC5F09E46797189D18Ea8cfb3B1AaA4661280Ae"}>
+                <p className={classes.accountNum}>SOON
+                    <CopyToClipboard text={"S"}>
                         <span><button onClick={handleCopy} className={classes.buttonCopy}>{!copied ? "COPY" : "COPIED"} </button></span>
                     </CopyToClipboard>
                 </p>
@@ -31,7 +31,7 @@ function Intro() {
 
                 <div className={classes.walletButtons}>
                     <button className={classes.walletBtn}>CONNECT WALLET</button>
-                    <button className={classes.walletBtn} onClick={window.addUPF}>ADD UPF IN WALLET</button>
+                    <button className={classes.walletBtn} onClick={window.addUP}>ADD UP IN WALLET</button>
                 </div>
 
                 <p>TAX: buy 9% / sell 12%</p>

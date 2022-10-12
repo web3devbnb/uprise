@@ -578,8 +578,8 @@ async function spin() {
 
   // tx = runRoullete(bets);
   // send_tx = provider.sendTransaction(tx);
-  var resultTopics = "0x7de6c3e23ce7540806fe64c828ce5a82ea1d9aebfe80d911eeb74cafd7fcb656";
-  var txHash = "0x32993fee5728439c49388729f42c9fdd2295641a34656b70e89d716205649c66";
+  var resultTopics = "0x0000000000000000000000000000";
+  var txHash = "0x0000000000000000000000000000";
 
   var result = await provider.waitForTransaction(txHash);
   var logs = result['logs'];

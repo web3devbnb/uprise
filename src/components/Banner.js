@@ -13,8 +13,8 @@ function Banner() {
       <div className="row">
         <div className="col-12 col-lg-8">
           <picture>
-            <source media="(max-width:992px)" srcSet="assets/img/banner/bannerImages/Upf_Banner_300.png"/>
-            <img src="assets/img/banner/bannerImages/Upf_Banner_900.png" />
+            <source media="(max-width:992px)" srcSet="assets/img/banner/bannerImages/UP_Banner_300.png"/>
+            <img src="assets/img/banner/bannerImages/UP_Banner_900.png" />
           </picture>    
           <h1>BUY.HOLD.EARN.</h1>
           <p>
@@ -27,7 +27,7 @@ function Banner() {
               </Link>
             </div>
             <div className="col-6">
-              <Link to="/upfinity" className="button scrollto">
+              <Link to="/UpRise" className="button scrollto">
                 <p className="center">Learn More</p>
               </Link>
             </div>

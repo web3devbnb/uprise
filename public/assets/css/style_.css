@@ -32,7 +32,7 @@
     #footer .social-links a {
       font-size: 18px;
       display: inline-block;
-      /*  background: #28a745;*/
+      /*  background: #0DCAF0;*/
       color: #fafafa;
       line-height: 1;
       padding: 8px 0;
@@ -45,7 +45,7 @@
     }
 
       #footer .social-links a:hover {
-        background: #28a745;
+        background: #0DCAF0;
         color: #fafafa;
         text-decoration: none;
       }
@@ -62,7 +62,7 @@
 
 
 .wrap-address:hover {
-  color: #28a745 !important;
+  color: #0DCAF0 !important;
   cursor: pointer;
 }
 
@@ -78,7 +78,7 @@
   display: inline-block;
   font-size: 20px;
   margin: 10px auto;
-  box-shadow: 0px 0px 5px 5px #28a74577;
+  box-shadow: 0px 0px 5px 5px #0DCAF077;
   text-decoration: none;
 }
 
@@ -90,18 +90,18 @@
 
 .button-soon {
 /*   border: 5px solid;
-  border-color: #28a745; */
+  border-color: #0DCAF0; */
   box-shadow: 0px 0px 5px 5px #ea481777;
   cursor: not-allowed;
 }
 .button-upgrade {
   /*   border: 5px solid;
-  border-color: #28a745; */
+  border-color: #0DCAF0; */
   box-shadow: 0px 0px 5px 5px #ffff0077;
 }
 
 .button:hover {
-  background: #28a745;
+  background: #0DCAF0;
   color: #222222;
   text-decoration: none;
 }
@@ -110,7 +110,7 @@
   color: #fff;
   border: 0;
   padding: 10px 35px;
-  background: #28a745;
+  background: #0DCAF0;
   transition: 0.4s;
   border-radius: 50px;
 }
@@ -139,11 +139,11 @@
 }
 
 .text-color-primary {
-  color: #28a745;
+  color: #0DCAF0;
 }
 
 .text-color-secondary {
-  color: #28a745;
+  color: #0DCAF0;
 }
 
 .text-bold {

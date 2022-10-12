@@ -13,7 +13,7 @@ function P2egame() {
   return (
     <section id="P2egames">
       <div className="section-title">
-        <h2>UpFinity Wars (SOON)</h2>
+        <h2>UpRise Wars (SOON)</h2>
         <p>Play to Earn Game</p>
       </div>
 

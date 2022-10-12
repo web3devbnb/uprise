@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Upfinomics() {
+function UPinomics() {
   const menu = {width:"20px", height:"20px"};
   const white = {color: "#fff"};
   const baseFontColor = {color: "#aaaaaa"};
@@ -11,11 +11,11 @@ function Upfinomics() {
   const font0_5em = {fontSize: "0.5em"};
   
   return (
-    <section id="Upfinomics">
+    <section id="UPinomics">
       <div className="container">
 
         <div className="section-title">
-          <h2>UpFinomics</h2>
+          <h2>UPinomics</h2>
           <p>Delicately designed for <span className="text-bold text-color-secondary">LONG-TERM</span> sustainability</p>
         </div>
 
@@ -26,7 +26,7 @@ function Upfinomics() {
                 <h5 className="card-title"><span>9</span>% Buy Tax / <span>12</span>% Sell Tax</h5>
                 <ul className="ul-no-style">
                 </ul>
-                <img src="assets/img/upfinomics/upfinomics.PNG" />
+                <img src="assets/img/UPinomics/UPinomics.PNG" />
 
               </div>
             </div>
@@ -38,7 +38,7 @@ function Upfinomics() {
                 <ul className="ul-no-style">
                   <li><i className="bx bx-check-double text-color-primary"></i>Project / Minus Tax: used for Burn / Giveaway / Airdrop event!</li>
                 </ul>
-                <img src="assets/img/upfinomics/distribution.PNG" />
+                <img src="assets/img/UPinomics/distribution.PNG" />
               </div>
             </div>
           </div>
@@ -49,4 +49,4 @@ function Upfinomics() {
 }
 
 
-export default Upfinomics;
+export default UPinomics;

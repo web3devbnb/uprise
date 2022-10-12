@@ -26,7 +26,7 @@ body {
 }
 
 a {
-  color: #28a745;
+  color: #0DCAF0;
   text-decoration: underline;
 }
 
@@ -57,7 +57,7 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
 }
 
 .buff {
-  color: #28a745;
+  color: #0DCAF0;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -78,7 +78,7 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #28a745;
+  background: #0DCAF0;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -90,7 +90,7 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
   line-height: 0;
 }
 .back-to-top:hover {
-  background: #28a745;
+  background: #0DCAF0;
   color: #fafafa;
 }
 .back-to-top.active {
@@ -117,7 +117,7 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #28a745;
+  border: 6px solid #0DCAF0;
   border-top-color: #fafafa;
   border-bottom-color: #fafafa;
   border-radius: 50%;
@@ -240,11 +240,11 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
 }
 .nav-menu a:hover, .nav-menu li:hover > a {
   color: #fafafa;
-  background: #28a745;
+  background: #0DCAF0;
 }
 .nav-menu .active, .nav-menu .active:focus {
   color: #fafafa;
-  background: #28a745;
+  background: #0DCAF0;
 }
 
 .nav-menu a:hover span, .nav-menu .active span, .nav-menu .active:focus span, .nav-menu li:hover > a span {
@@ -287,7 +287,7 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
 }
 .mobile-nav-active .mobile-nav-toggle {
   color: #fafafa;
-  background-color: #28a745;
+  background-color: #0DCAF0;
 }
 
 /*--------------------------------------------------------------
@@ -328,7 +328,7 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
   font-family: "Poppins", sans-serif;
 }
 #hero p span {
-  color: #28a745;
+  color: #0DCAF0;
 }
 #hero .social-links {
   margin-top: 10px;
@@ -355,7 +355,7 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
 }
 
 #hero .social-links a:hover {
-  color: #28a745;
+  color: #0DCAF0;
 }
 #hero .social-links .button:hover {
   color: #fff;
@@ -425,7 +425,7 @@ section {
   display: block;
   width: 40px;
   height: 3px;
-  background: #28a745;
+  background: #0DCAF0;
   bottom: 0;
   left: calc(50% - 20px);
 }
@@ -455,7 +455,7 @@ section {
 i {
   font-size: 40px;
   margin-right: 5px;
-  color: #28a745;
+  color: #0DCAF0;
   line-height: 0;
   vertical-align: middle;
 }
@@ -486,7 +486,7 @@ i {
   left: 50%;
   transform: translateX(-50%);
   font-size: 24px;
-  background: #28a745;
+  background: #0DCAF0;
   color: #fafafa;
   border-radius: 50px;
   display: inline-flex;
@@ -537,7 +537,7 @@ i {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #28a745;
+  background-color: #0DCAF0;
 }
 
 /*--------------------------------------------------------------
@@ -553,7 +553,7 @@ i {
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #28a745;
+  border-left: 2px solid #0DCAF0;
   position: relative;
 }
 .resume .resume-item h4 {
@@ -562,7 +562,7 @@ i {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #28a745;
+  color: #0DCAF0;
   margin-bottom: 10px;
 }
 .resume .resume-item h5 {
@@ -591,7 +591,7 @@ i {
   left: -9px;
   top: 0;
   background: #fafafa;
-  border: 2px solid #28a745;
+  border: 2px solid #0DCAF0;
 }
 
 /*--------------------------------------------------------------
@@ -622,7 +622,7 @@ i {
   transition: all 0.3s ease-in-out;
 }
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  color: #28a745;
+  color: #0DCAF0;
 }
 .portfolio #portfolio-flters li:last-child {
   margin-right: 0;
@@ -711,7 +711,7 @@ i {
   transition: 0.3s;
 }
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: #28a745;
+  color: #0DCAF0;
 }
 .portfolio .portfolio-wrap:hover::before {
   top: 0;
@@ -750,10 +750,10 @@ i {
   height: 12px;
   background-color: #fafafa;
   opacity: 1;
-  border: 1px solid #28a745;
+  border: 1px solid #0DCAF0;
 }
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #28a745;
+  background-color: #0DCAF0;
 }
 .portfolio-details .portfolio-info {
   padding: 30px;
@@ -839,13 +839,13 @@ i {
   box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
 }
 .services .iconbox-blue i {
-  color: #28a745;
+  color: #0DCAF0;
 }
 .services .iconbox-blue:hover .icon i {
   color: #fafafa;
 }
 .services .iconbox-blue:hover .icon path {
-  fill: #28a745;
+  fill: #0DCAF0;
 }
 .services .iconbox-orange i {
   color: #ffa76e;
@@ -951,10 +951,10 @@ i {
   height: 12px;
   background-color: #fafafa;
   opacity: 1;
-  border: 1px solid #28a745;
+  border: 1px solid #0DCAF0;
 }
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #28a745;
+  background-color: #0DCAF0;
 }
 @media (min-width: 992px) {
   .testimonials .testimonial-item p {
@@ -971,7 +971,7 @@ i {
 }
 .contact .info i {
   font-size: 20px;
-  color: #28a745;
+  color: #0DCAF0;
   float: left;
   width: 44px;
   height: 44px;
@@ -999,7 +999,7 @@ i {
   margin-top: 40px;
 }
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-  background: #28a745;
+  background: #0DCAF0;
   color: #fafafa;
 }
 .contact .php-email-form {
@@ -1058,7 +1058,7 @@ i {
   padding: 10px 12px;
 }
 .contact .php-email-form button[type=submit] {
-  background: #28a745;
+  background: #0DCAF0;
   border: 0;
   padding: 10px 35px;
   color: #fafafa;
@@ -1066,7 +1066,7 @@ i {
   border-radius: 50px;
 }
 .contact .php-email-form button[type=submit]:hover {
-  background: #28a745;
+  background: #0DCAF0;
 }
 @-webkit-keyframes animate-loading {
   0% {

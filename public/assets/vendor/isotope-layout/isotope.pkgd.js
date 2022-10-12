@@ -2540,8 +2540,8 @@ return Item;
 
   // create an Outlayer layout class
   var Masonry = Outlayer.create('masonry');
-  // isFitWidth -> fitWidth
-  Masonry.compatOptions.fitWidth = 'isFitWidth';
+  // iUPtWidth -> fitWidth
+  Masonry.compatOptions.fitWidth = 'iUPtWidth';
 
   var proto = Masonry.prototype;
 
@@ -2588,8 +2588,8 @@ return Item;
 
   proto.getContainerWidth = function() {
     // container is parent if fit width
-    var isFitWidth = this._getOption('fitWidth');
-    var container = isFitWidth ? this.element.parentNode : this.element;
+    var iUPtWidth = this._getOption('fitWidth');
+    var container = iUPtWidth ? this.element.parentNode : this.element;
     // check that this.size and size are there
     // IE8 triggers resize on body size change, so they might not be
     var size = getSize( container );
@@ -2805,8 +2805,8 @@ return Item;
   var _getOption = proto._getOption;
   proto._getOption = function( option ) {
     if ( option == 'fitWidth' ) {
-      return this.options.isFitWidth !== undefined ?
-        this.options.isFitWidth : this.options.fitWidth;
+      return this.options.iUPtWidth !== undefined ?
+        this.options.iUPtWidth : this.options.fitWidth;
     }
     return _getOption.apply( this.isotope, arguments );
   };
@@ -3190,7 +3190,7 @@ var trim = String.prototype.trim ?
       }
       // add item to either matched or unmatched group
       var isMatched = test( item );
-      // item.isFilterMatched = isMatched;
+      // item.iUPlterMatched = isMatched;
       // add to matches if its a match
       if ( isMatched ) {
         matches.push( item );

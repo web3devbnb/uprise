@@ -245,7 +245,7 @@ img {
 
 .nav-button:hover {
   color: #fff;
-  text-shadow: 2px 2px 0 #28a745, 4px 4px 1px #0b5a1f;
+  text-shadow: 2px 2px 0 #0DCAF0, 4px 4px 1px #0b5a1f;
 }
 
 .nav-button:active {
@@ -292,7 +292,7 @@ img {
 .ecodd-mainlink {
   padding-right: 0px;
   padding-left: 0px;
-  color: #28a745;
+  color: #0DCAF0;
   font-size: 120%;
   font-style: normal;
   text-align: center;
@@ -324,7 +324,7 @@ img {
 .ecodd-secondlink {
   margin-top: 10px;
   margin-bottom: 0px;
-  color: #28a745;
+  color: #0DCAF0;
   font-size: 15px;
   font-style: normal;
   text-align: center;
@@ -358,7 +358,7 @@ img {
 }
 
 .ecodd-secondlink.nav-button:hover {
-  text-shadow: 2px 2px 0 #28a745, 4px 4px 0 #0b5a1f;
+  text-shadow: 2px 2px 0 #0DCAF0, 4px 4px 0 #0b5a1f;
 }
 
 .ecodd-secondlink.nav-button:active {
@@ -627,7 +627,7 @@ img {
   -ms-flex: 0 auto;
   flex: 0 auto;
   border-radius: 7px;
-  background-color: #28a745;
+  background-color: #0DCAF0;
   box-shadow: inset 2px 2px 0 0 #4ef477, 2px 2px 0 0 #0b5a1f;
   font-size: 14px;
   text-shadow: 1px 1px 2px #000;
@@ -783,7 +783,7 @@ img {
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
-  color: #28a745;
+  color: #0DCAF0;
 }
 
 .ecosystem-section {
@@ -865,7 +865,7 @@ img {
   align-self: auto;
   border-radius: 20px;
   font-family: Tisasanspro, sans-serif;
-  color: #28a745;
+  color: #0DCAF0;
 }
 
 .lottie-animation-2 {
@@ -1164,7 +1164,7 @@ img {
 }
 
 .h-oversized.intro-2.lennon {
-  color: #28a745;
+  color: #0DCAF0;
   line-height: 0%;
   font-style: italic;
   font-weight: 900;
@@ -1867,7 +1867,7 @@ img {
   padding-bottom: 0px;
   padding-left: 0px;
   font-family: 'Uniwars black', sans-serif;
-  color: #28a745;
+  color: #0DCAF0;
   font-size: 72px;
   font-style: normal;
   font-weight: 700;
@@ -2080,7 +2080,7 @@ img {
 }
 
 .text-span {
-  color: #28a745;
+  color: #0DCAF0;
 }
 
 .scroll-prompt-wrapper {
@@ -2137,7 +2137,7 @@ img {
   height: 70%;
   border-style: dashed;
   border-width: 2px;
-  border-color: #28a745;
+  border-color: #0DCAF0;
   border-radius: 50%;
 }
 
@@ -2239,12 +2239,12 @@ img {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
-  color: #28a745;
+  color: #0DCAF0;
   font-size: 12px;
 }
 
 .text-block-2 {
-  color: #28a745;
+  color: #0DCAF0;
   font-size: 12px;
   line-height: 12px;
 }
@@ -2289,7 +2289,7 @@ img {
   margin-top: 170px;
   color: #fff;
   font-size: 72px;
-  text-shadow: 4px 4px 1px #28a745, 8px 8px 2px #bbf2c3;
+  text-shadow: 4px 4px 1px #0DCAF0, 8px 8px 2px #bbf2c3;
 }
 
 .div-block-2 {
@@ -2431,11 +2431,11 @@ img {
 }
 
 .text-span-2 {
-  color: #28a745;
+  color: #0DCAF0;
 }
 
 .text-span-3 {
-  color: #28a745;
+  color: #0DCAF0;
 }
 
 .image-4 {
@@ -2582,7 +2582,7 @@ img {
 
 .u:active {
   color: transparent;
-  text-shadow: 2px 2px 0 #fff, 4px 4px 0 #28a745;
+  text-shadow: 2px 2px 0 #fff, 4px 4px 0 #0DCAF0;
 }
 
 .u.nav-button {

@@ -72,7 +72,7 @@ function isArray(value) {
 function isObject(value) {
   return value !== null && Object.prototype.toString.call(value) === '[object Object]';
 }
-const isNumberFinite = (value) => (typeof value === 'number' || value instanceof Number) && isFinite(+value);
+const isNumberFinite = (value) => (typeof value === 'number' || value instanceof Number) && iUPnite(+value);
 function finiteOrDefault(value, defaultValue) {
   return isNumberFinite(value) ? value : defaultValue;
 }
@@ -270,7 +270,7 @@ function _factorize(value) {
   return result;
 }
 function isNumber(n) {
-  return !isNaN(parseFloat(n)) && isFinite(n);
+  return !isNaN(parseFloat(n)) && iUPnite(n);
 }
 function almostEquals(x, y, epsilon) {
   return Math.abs(x - y) < epsilon;

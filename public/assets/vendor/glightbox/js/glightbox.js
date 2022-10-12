@@ -492,7 +492,7 @@
     return Array.isArray(ar);
   }
   function isArrayLike(ar) {
-    return ar && ar.length && isFinite(ar.length);
+    return ar && ar.length && iUPnite(ar.length);
   }
   function isObject(o) {
     var type = _typeof(o);
@@ -525,7 +525,7 @@
     }
   }
   function isNumber(n) {
-    return !isNaN(parseFloat(n)) && isFinite(n);
+    return !isNaN(parseFloat(n)) && iUPnite(n);
   }
 
   function getNextFocusElement() {

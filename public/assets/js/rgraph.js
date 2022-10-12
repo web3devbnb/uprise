@@ -30,7 +30,7 @@ function init(){
     //init data
 var json = {
       id: "0",
-      name: "UpFinity",
+      name: "UpRise",
       data: {},
       children: [{
         id: "0_0",
@@ -183,7 +183,7 @@ var json = {
     //init RGraph
     var rgraph = new $jit.RGraph({
 		useCanvas: false,
-		// background: "https://theupfinity.com/assets/img/logo.png",
+		// background: "https://theUpRise.com/assets/img/logo.png",
 		duration: 300,
 		fps: 30,
 		transition: $jit.Trans.Quart.easeInOut,
@@ -231,7 +231,7 @@ var json = {
         onCreateLabel: function(domElement, node){
 			
             // domElement.innerHTML = node.name;
-			domElement.innerHTML = "<div style='position: relative; top: -10px;'><img src='https://theupfinity.com/assets/img/new/" + node.name + ".png' style='width: 20px;'></div>" + node.name,
+			domElement.innerHTML = "<div style='position: relative; top: -10px;'><img src='https://theUpRise.com/assets/img/new/" + node.name + ".png' style='width: 20px;'></div>" + node.name,
             domElement.onclick = function(){
                 rgraph.onClick(node.id, {
                     onComplete: function() {

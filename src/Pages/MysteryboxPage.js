@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Mysterybox from '../components/Mysterybox';
-import Upfinomics from '../components/Upfinomics';
+import UPinomics from '../components/UPinomics';
 import SAFUs from '../components/SAFUs';
 import Staking from '../components/Staking';
 

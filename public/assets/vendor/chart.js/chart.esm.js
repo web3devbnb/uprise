@@ -9203,7 +9203,7 @@ class CategoryScale extends Scale {
       return null;
     }
     const labels = this.getLabels();
-    index = isFinite(index) && labels[index] === raw ? index
+    index = iUPnite(index) && labels[index] === raw ? index
       : findOrAddLabel(labels, raw, valueOrDefault(index, raw));
     return validIndex(index, labels.length - 1);
   }
@@ -9385,7 +9385,7 @@ class LinearScaleBase extends Scale {
     if (isNullOrUndef(raw)) {
       return null;
     }
-    if ((typeof raw === 'number' || raw instanceof Number) && !isFinite(+raw)) {
+    if ((typeof raw === 'number' || raw instanceof Number) && !iUPnite(+raw)) {
       return null;
     }
     return +raw;

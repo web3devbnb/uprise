@@ -14,7 +14,7 @@ function Staking() {
     <section id="Staking" className="container">
       <div className="section-title">
         <h2>Staking</h2>
-        <p>Stake <img src="assets/img/logo.png" className="small-icon"/>UPF, Earn <img src="assets/img/logo.png" className="small-icon"/>UPF</p>
+        <p>Stake <img src="assets/img/logo.png" className="small-icon"/>UP, Earn <img src="assets/img/logo.png" className="small-icon"/>UP</p>
         <p>Rewards are <span>auto-staked/compounded</span></p>
 
         <div className="row">
@@ -23,24 +23,24 @@ function Staking() {
             <span id="totalValueLocked" className="text-center" style={font2_5em}></span>
           </div>
           <div className="col-12 col-md-4">
-            <p>Total UPF Staked</p>
-            <span id="totalStaked" className="text-center" style={font2_5em}></span><img src="assets/img/logo.png" className="small-icon"/>UPF
+            <p>Total UP Staked</p>
+            <span id="totalStaked" className="text-center" style={font2_5em}></span><img src="assets/img/logo.png" className="small-icon"/>UP
           </div>
           <div className="col-12 col-md-4">
-            <p>Total UPF Rewarded</p>
-            <span id="_totalFundsUsed" className="text-center" style={font2_5em}></span><img src="assets/img/logo.png" className="small-icon"/>UPF
+            <p>Total UP Rewarded</p>
+            <span id="_totalFundsUsed" className="text-center" style={font2_5em}></span><img src="assets/img/logo.png" className="small-icon"/>UP
           </div>  
         </div>
         <p>Staking Contract Address</p>
-        <a href="https://bscscan.com/address/0xCeC0Ee6071571d77cFcD52244D7A1D875f71d32D" target="_tab">
-          0xCeC0Ee6071571d77cFcD52244D7A1D875f71d32D
+        <a href="https://bscscan.com/address/Soon" target="_tab">
+          Soon
         </a>
       </div>
 
       <div className="row">
         <div className="col-12 col-lg-6 text-justify content">
           <h3>Stake</h3>
-          <span>Stake Season 1 Finished by giving 80,000,000,000 UPF!</span>
+          <span>Stake Season 1 Finished by giving 80,000,000,000 UP!</span>
           <div>Stake Season 2 Started!</div>
           <div><i className="bi bi-chevron-right"></i>Connect wallet</div>
 
@@ -51,8 +51,8 @@ function Staking() {
           <div style={{border: "solid 3px", borderRadius: "16px", background: "white"}}>
             <input id="typedStakeAmount" defaultValue="" inputMode="decimal" type="text" pattern="^[0-9]*[.,]?[0-9]*$" placeholder="Write down amount to stake" style={{caretColor: "black", color: "black", textAlign: "center", backgroundColor: "white"}} />
             <div>
-              <img id="UPFlogo" className="small-icon" src="assets/img/logo.png" style={{width30px}}/>
-              UPF
+              <img id="UPlogo" className="small-icon" src="assets/img/logo.png" style={{width30px}}/>
+              UP
             </div>
           </div>
 
@@ -69,13 +69,13 @@ function Staking() {
             <div className="col-6 align-items-stretch">
               <div className="icon-box">
                 <h6 className="text-center ">Your Rewards</h6>
-                <div id="calculateReward" className="text-center" style={font0_5em}></div>UPF
+                <div id="calculateReward" className="text-center" style={font0_5em}></div>UP
               </div>
             </div>
             <div className="col-6 align-items-stretch">
               <div className="icon-box">
                 <h6 className="text-center ">Your claimed rewards</h6>
-                <div id="_claimedAmounts" className="text-center" style={font0_5em}></div>UPF
+                <div id="_claimedAmounts" className="text-center" style={font0_5em}></div>UP
               </div>
             </div>
           </div>
@@ -85,7 +85,7 @@ function Staking() {
           <div><i className="bi bi-chevron-right"></i>Click 'Unstake' and confirm in wallet dapp</div>
           <a id="unstake" className="button button-soon scrollto" onClick={window.funstake}>Stake First</a>
 
-          <div><i className="bi bi-chevron-right"></i>UPF will be unstaked <span>with rewards</span></div>
+          <div><i className="bi bi-chevron-right"></i>UP will be unstaked <span>with rewards</span></div>
         </div>
       </div>
 

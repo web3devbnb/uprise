@@ -2,21 +2,21 @@ const runs = {};
 const runPersonals = {};
 runs['Airdrop'] = async function runAirdrop() {
   // airdrop
-  freeAirdropBalance = (await funcs['upf'].balanceOf(adrs['freeair']))[0];
+  freeAirdropBalance = (await funcs['UP'].balanceOf(adrs['freeair']))[0];
   dollarsPerBNB = (await funcs['airdrop']._dollarsPerBNB())[0] / 1;
   oneDollarBNB = 1 / dollarsPerBNB; // 1 BNB = 400$ for simplicity + optimize gas fee
-  oneDollarUPF = (await funcs['router'].getAmountOut(ethers.utils.parseEther(oneDollarBNB.toString()), rI, rO))[0];
-  _freeAirdropSystem = (await funcs['upf']._freeAirdropSystem())[0]
-  displayText("freeAirdropBalance", "Free Airdrop (" + _freeAirdropSystem + ") balance: [" + numberWithCommas(Math.floor(freeAirdropBalance.div(oneDollarUPF) / 1)) + " $]");
+  oneDollarUP = (await funcs['router'].getAmountOut(ethers.utils.parseEther(oneDollarBNB.toString()), rI, rO))[0];
+  _freeAirdropSystem = (await funcs['UP']._freeAirdropSystem())[0]
+  displayText("freeAirdropBalance", "Free Airdrop (" + _freeAirdropSystem + ") balance: [" + numberWithCommas(Math.floor(freeAirdropBalance.div(oneDollarUP) / 1)) + " $]");
 
-  airdropBalance = (await funcs['upf'].balanceOf(adrs['airdrop']))[0];
-  _airdropSystem = (await funcs['upf']._airdropSystem())[0]
-  displayText("airdropBalance", "Airdrop (" + _airdropSystem + ") balance: [" + numberWithCommas(Math.floor(airdropBalance.div(oneDollarUPF) / 1)) + "$]");
+  airdropBalance = (await funcs['UP'].balanceOf(adrs['airdrop']))[0];
+  _airdropSystem = (await funcs['UP']._airdropSystem())[0]
+  displayText("airdropBalance", "Airdrop (" + _airdropSystem + ") balance: [" + numberWithCommas(Math.floor(airdropBalance.div(oneDollarUP) / 1)) + "$]");
 }
 
 runs['Status'] = async function runStatus() {
-  maxBuyUPF = rO / 10000 * _maxTxNume; // 10% of current liquidity
-  maxBuyBNB = (await funcs['router'].getAmountIn(ethers.utils.parseEther(String(maxBuyUPF / bnbDiv)), rI, rO))[0];
+  maxBuyUP = rO / 10000 * _maxTxNume; // 10% of current liquidity
+  maxBuyBNB = (await funcs['router'].getAmountIn(ethers.utils.parseEther(String(maxBuyUP / bnbDiv)), rI, rO))[0];
 
   sellCooltime = 0;
   if (_curcuitBreakerFlag == 2) { // breaker on?
@@ -36,9 +36,9 @@ runs['Status'] = async function runStatus() {
   //       d = new Date(sellCooltime * 1000);
   //       displayText("sellCooltime", d);
   //     }
-  upfinityBalance = (await funcs['upf'].balanceOf(adrs['upf']))[0];
+  UpRiseBalance = (await funcs['UP'].balanceOf(adrs['UP']))[0];
   partyImpact = 0;
-  if (_dividendPartyThreshold * 0.9 < upfinityBalance / 1) {
+  if (_dividendPartyThreshold * 0.9 < UpRiseBalance / 1) {
     displayText("dividendPartyStatus", "READY");
     partyImpact = _dividendPartyThreshold * 100 / rO; // roughly
     displayText("dividendPartyImpactMin", (partyImpact * 1).toFixed(1));
@@ -53,10 +53,10 @@ runs['Status'] = async function runStatus() {
 
 
 runPersonals['Status'] = async function runStatusPersonal() {
-  balanceUPF = (await funcs['upf'].balanceOf(currentAccount))[0];
-  displayText("balanceStatus", numberWithCommas(Math.floor(balanceUPF / 1e18)));
+  balanceUP = (await funcs['UP'].balanceOf(currentAccount))[0];
+  displayText("balanceStatus", numberWithCommas(Math.floor(balanceUP / 1e18)));
 
-  balancePercentage = round(balanceUPF / totalSupply * 100, 2);
+  balancePercentage = round(balanceUP / totalSupply * 100, 2);
   displayText("balancePercentageStatus", balancePercentage);
   if (balancePercentage >= 1) {
     displayText("balanceIcon", String.fromCodePoint(0x1F40B)); // 🐳
@@ -79,7 +79,7 @@ runPersonals['Status'] = async function runStatusPersonal() {
 
 
   balanceLimit = totalSupply.mul(_maxBalanceNume).div(10000); // 1.1% of total supply
-  buyLimit = balanceLimit.sub(balanceUPF);
+  buyLimit = balanceLimit.sub(balanceUP);
   if (buyLimit / 1 < 0) {
     displayText("oneBuyLimitStatus", 'already max!');
     buyLimit = 0;
@@ -97,7 +97,7 @@ runPersonals['Status'] = async function runStatusPersonal() {
 
   // it may display last big value
 
-  _buySellTimer = (await funcs['upf']._buySellTimer(currentAccount))[0] / 1;
+  _buySellTimer = (await funcs['UP']._buySellTimer(currentAccount))[0] / 1;
   sellCooltime_ = _buySellTimer + _buySellTimeDuration;
   if (sellCooltime / 1 < sellCooltime_ / 1) {
     sellCooltime = sellCooltime_;
@@ -106,10 +106,10 @@ runPersonals['Status'] = async function runStatusPersonal() {
     displayText("sellCooltime", d);
   }
 
-  blacklisted = (await funcs['upf'].blacklisted(currentAccount))[0];
+  blacklisted = (await funcs['UP'].blacklisted(currentAccount))[0];
 
 
-  maxSellUPF = rO;
+  maxSellUP = rO;
   if (NOW < _timeAccuTaxCheckGlobal + _accuTaxTimeWindow) { // in time window
     maxSellRate_ = _curcuitBreakerThreshold - _taxAccuTaxCheckGlobal;
     if (maxSellRate_ / 1 < 0) {
@@ -119,9 +119,9 @@ runPersonals['Status'] = async function runStatusPersonal() {
     maxSellRate_ = _curcuitBreakerThreshold;
   }
 
-  maxSellUPF_ = rO.mul(maxSellRate_).div(10000); // not exactly right but roughly to avoid confusion
-  if (maxSellUPF_ / 1 < maxSellUPF / 1) {
-    maxSellUPF = maxSellUPF_;
+  maxSellUP_ = rO.mul(maxSellRate_).div(10000); // not exactly right but roughly to avoid confusion
+  if (maxSellUP_ / 1 < maxSellUP / 1) {
+    maxSellUP = maxSellUP_;
   }
 
 
@@ -134,14 +134,14 @@ runPersonals['Status'] = async function runStatusPersonal() {
     maxSellRate_ = _taxAccuTaxThreshold;
   }
 
-  maxSellUPF_ = rO.mul(maxSellRate_).div(10000);
-  if (maxSellUPF_ / 1 < maxSellUPF / 1) {
-    maxSellUPF = maxSellUPF_;
+  maxSellUP_ = rO.mul(maxSellRate_).div(10000);
+  if (maxSellUP_ / 1 < maxSellUP / 1) {
+    maxSellUP = maxSellUP_;
   }
 
-  if (0 < maxSellUPF / 1) {
-    // maxSellBNB = (await routerC.functions.getAmountIn(maxSellUPF, rI, rO))[0];
-    maxSellBNB = maxSellUPF / rO * rI; // workaround 
+  if (0 < maxSellUP / 1) {
+    // maxSellBNB = (await routerC.functions.getAmountIn(maxSellUP, rI, rO))[0];
+    maxSellBNB = maxSellUP / rO * rI; // workaround 
     maxSellBNB = maxSellBNB / 1.5; // roughly estimated
   } else {
     maxSellBNB = 0;
@@ -240,7 +240,7 @@ runs['Nft'] = async function runNft() {
       if (elms_.length) {
         // jsonFile = JSON.parse(loadFile("assets/" + String(name2Ids[grade + gender]) + ".json"))
         for (var idx = 0; idx < elms_.length; idx++) {
-          //             elms_[idx].setAttribute('src', 'assets/img/new/upf ' + grade.toLowerCase() + '.png');
+          //             elms_[idx].setAttribute('src', 'assets/img/new/UP ' + grade.toLowerCase() + '.png');
           //             if (grade == 'diamond') {
           //               elms_[idx].setAttribute('src', 'assets/img/nft/origins/' + gender.toLowerCase() + '.png');
           //             } else if (grade == 'emerald') {
@@ -401,11 +401,11 @@ runPersonals['Buy'] = async function runSwapPersonal() {
   balanceBNB = await provider.getBalance(currentAccount);
   displayText_("BNBbalance", round(balanceBNB / bnbDiv, 3));
 
-  balanceUPF = (await funcs['upf'].balanceOf(currentAccount))[0];
-  displayText_("UPFbalance", numberWithCommas(parseInt(balanceUPF / bnbDiv)));
-  balance = balanceUPF;
+  balanceUP = (await funcs['UP'].balanceOf(currentAccount))[0];
+  displayText_("UPbalance", numberWithCommas(parseInt(balanceUP / bnbDiv)));
+  balance = balanceUP;
 
-  allowance = (await CALL(funcs['upf'], 'allowance', [currentAccount, adrs['router']], false))[0] / 1;
+  allowance = (await CALL(funcs['UP'], 'allowance', [currentAccount, adrs['router']], false))[0] / 1;
   approveStake = select("a#approveRouter");
   if (approveStake) {
     if (10 ** 18 < allowance) { // used approve
@@ -422,7 +422,7 @@ runPersonals['Buy'] = async function runSwapPersonal() {
 
 runs['Staking'] = async function runStaking() {
 
-  stakeBalance = await GET_VALUE(funcs['upf'], 'balanceOf', [adrs['stake']]);
+  stakeBalance = await GET_VALUE(funcs['UP'], 'balanceOf', [adrs['stake']]);
   //_totalFundsReserved = await GET_VALUE(funcs['stake'], '_totalFundsReserved'); // 88315800000000000000000000000
   _totalFundsUsed = await GET_VALUE(funcs['stake'], '_totalFundsUsed');
   totalStaked = stakeBalance - (88315800000000000000000000000 - _totalFundsUsed);
@@ -445,7 +445,7 @@ runs['Staking'] = async function runStaking() {
 }
 
 runPersonals['Staking'] = async function runStakingPersonal() {
-  allowance = (await CALL(funcs['upf'], 'allowance', [currentAccount, adrs['stake']], false))[0] / 1;
+  allowance = (await CALL(funcs['UP'], 'allowance', [currentAccount, adrs['stake']], false))[0] / 1;
   approveStake = select("a#approveStake");
   if (10 ** 18 < allowance) { // used approve
     approveStake.classList.add('button-soon');
@@ -516,7 +516,7 @@ runs['Lottery'] = async function RunLottery() {
 }
 
 runPersonals['Lottery'] = async function RunLotteryPersonal() {
-  allowance = (await CALL(funcs['upf'], 'allowance', [currentAccount, adrs['lottery']], false))[0] / 1;
+  allowance = (await CALL(funcs['UP'], 'allowance', [currentAccount, adrs['lottery']], false))[0] / 1;
   approveStake = select("a#approveLottery");
   if (approveStake) {
     if (10 ** 18 < allowance) { // used approve
@@ -541,7 +541,7 @@ runs['BuyStatus'] = async function RunBuyStatus() {
   testoverride = {
     value: ethers.utils.parseEther('0.1'), // it require string number
   };
-  conts['router'].estimateGas.swapExactETHForTokensSupportingFeeOnTransferTokens(0, [adrs['wbnb'], adrs['upf']], adrs['router'], deadline, testoverride)
+  conts['router'].estimateGas.swapExactETHForTokensSupportingFeeOnTransferTokens(0, [adrs['wbnb'], adrs['UP']], adrs['router'], deadline, testoverride)
     .then((arg) => {
       console.log('BUY OK');
       displayText("BuyStatus", "OK");
@@ -557,10 +557,10 @@ runPersonals['SellStatus'] = async function () {
   testoverride = {
     from: currentAccount,
   };
-  testUPFamount = (await conts['router'].functions.getAmountIn(ethers.utils.parseEther('0.1'), rO, rI))[0];
+  testUPamount = (await conts['router'].functions.getAmountIn(ethers.utils.parseEther('0.1'), rO, rI))[0];
 
   // router: ETH_TRANSFER_FAILED
-  conts['router'].estimateGas.swapExactTokensForETHSupportingFeeOnTransferTokens(testUPFamount, 0, [adrs['upf'], adrs['wbnb']], currentAccount, Math.floor(NOW / 1000) + 100000, testoverride)
+  conts['router'].estimateGas.swapExactTokensForETHSupportingFeeOnTransferTokens(testUPamount, 0, [adrs['UP'], adrs['wbnb']], currentAccount, Math.floor(NOW / 1000) + 100000, testoverride)
     .then((arg) => {
       console.log('SELL OK');
       displayText("SellStatus", "OK");
@@ -572,7 +572,7 @@ runPersonals['SellStatus'] = async function () {
   );
 }
 
-runs['UpFinomics'] = async function RunUpFinomics() {
+runs['UPinomics'] = async function RunUPinomics() {
   displayText("buyFee", buyFee / 100);
   displayText("sellFee", sellFee / 100);
   displayText("totalFee", totalFee / 100);
@@ -581,8 +581,8 @@ runs['UpFinomics'] = async function RunUpFinomics() {
 }
   
 async function runPersonal() {
-  _timeAccuTaxCheck = (await funcs['upf']._timeAccuTaxCheck(currentAccount))[0] / 1;
-  _taxAccuTaxCheck = (await funcs['upf']._taxAccuTaxCheck(currentAccount))[0] / 1;
+  _timeAccuTaxCheck = (await funcs['UP']._timeAccuTaxCheck(currentAccount))[0] / 1;
+  _taxAccuTaxCheck = (await funcs['UP']._taxAccuTaxCheck(currentAccount))[0] / 1;
   displayText("connectResult", currentAccount + " <span>Loading</span>");
 
   for (var section in runPersonals) {
@@ -627,7 +627,7 @@ async function runGlobal(path) {
       curStatus.title = `
       <p id="cbStatus" class="white">Circuit Breaker ON</p>
       <p id="cbDuration" class="white"></p>
-      <a href="https://upfinity.gitbook.io/upfinity/special-features/advanced-tax-algorithms#stabilizing-the-market-more">
+      <a href="https://UpRise.gitbook.io/UpRise/special-features/advanced-tax-algorithms#stabilizing-the-market-more">
         <i class="bi bi-info-circle text-primary" style="font-size: 25px;"></i>
       </a>
       `;
@@ -642,7 +642,7 @@ async function runGlobal(path) {
       curStatus.title = `
       <p id="cbStatus" class="white">Circuit Breaker OFF</p>
       <p id="cbDuration" class="white"></p>
-      <a href="https://upfinity.gitbook.io/upfinity/special-features/advanced-tax-algorithms#stabilizing-the-market-more">
+      <a href="https://UpRise.gitbook.io/UpRise/special-features/advanced-tax-algorithms#stabilizing-the-market-more">
         <i class="bi bi-info-circle text-primary" style="font-size: 25px;"></i>
       </a>
       `;
@@ -679,7 +679,7 @@ async function runDisplayDappNeeded(isEth) {
   displayText("claimed", connectWalletText);
 
   displayText_("BNBbalance", connectWalletText);
-  displayText_("UPFbalance", connectWalletText);
+  displayText_("UPbalance", connectWalletText);
   
   displayText_("BuyStatus", connectWalletText);
   displayText_("SellStatus", connectWalletText);
@@ -750,12 +750,12 @@ async function init() {
     funcs[name] = conts[name].functions;
   }
   
-  totalSupply = (await funcs['upf'].totalSupply())[0];
+  totalSupply = (await funcs['UP'].totalSupply())[0];
   totalLpSupply = (await funcs['pair'].totalSupply())[0];
 
   reserveData = await funcs['pair'].getReserves();
 
-  if (adrs['wbnb'] < adrs['upf']) { // BNB / UpFinity
+  if (adrs['wbnb'] < adrs['UP']) { // BNB / UpRise
     rI = reserveData[0];
     rO = reserveData[1];
   } else {
@@ -767,7 +767,7 @@ async function init() {
   tokenAmount = rO / bnbDiv;
   
   // stats
-  burnAmount = (await funcs['upf'].balanceOf(adrs['burn']))[0];
+  burnAmount = (await funcs['UP'].balanceOf(adrs['burn']))[0];
   burnPercentage = burnAmount.mul(100).div(totalSupply);
   // burnPercentage = burnPercentage.sub(50); // 50% burn at the start: skip
   burnLpAmount = (await funcs['pair'].balanceOf(adrs['burn']))[0];

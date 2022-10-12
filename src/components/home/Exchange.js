@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './Exchange.module.css'
 import logoBnb from '../../assets/images/binance-logo.png'
-import logoUpf from "../../assets/images/UPFLOGO.png"
+import logoUP from "../../assets/images/UPLOGO.png"
 import OnramperWidget from "../home/OnramperWidget"
 
 export default function Exchange() {
@@ -29,12 +29,12 @@ export default function Exchange() {
 
                     <div className={classes.inputContainer}>
 
-                        <input id="exchangeOutput" placeholder="to UPF"></input>
-                        <img src={logoUpf} alt="logo" className={classes.logo} />
+                        <input id="exchangeOutput" placeholder="to UP"></input>
+                        <img src={logoUP} alt="logo" className={classes.logo} />
 
                     </div>
                     <div className={classes.walletButtons}>
-                        <button className={classes.buyBtn} onClick={window.fbuyUPF}>BUY</button>
+                        <button className={classes.buyBtn} onClick={window.fbuyUP}>BUY</button>
                     </div>
 
                 </div>

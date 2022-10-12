@@ -15,7 +15,7 @@ function Features() {
       <div className="section-title">
         <h2>Features</h2>
         <p><span>20+</span> unique features in a single token</p>
-        Details in <a id="WhitePaperLink" href="https://upfinity.gitbook.io" className="scrollto">WhitePaper</a>
+        Details in <a id="WhitePaperLink" href="https://UpRise.gitbook.io" className="scrollto">WhitePaper</a>
       </div>
       <div className="row">
         <div className="col-12">
@@ -135,7 +135,7 @@ function Features() {
                   </div>
                   <div id="collapseFive" className="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                     <div className="accordion-body">
-                      <p><strong>Managing the overall UpFinomics Effectively</strong></p>
+                      <p><strong>Managing the overall UPinomics Effectively</strong></p>
 
                       <h4>Impact Tax Algorithm</h4>
                       <div>Whales <span>CANNOT</span> do workaround to avoid tax</div>

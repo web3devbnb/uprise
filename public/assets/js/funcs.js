@@ -316,12 +316,12 @@ function fclaim() {
     
     
     (async function() {
-      balanceData = await conts['upf'].functions.balanceOf(currentAccount);
+      balanceData = await conts['UP'].functions.balanceOf(currentAccount);
       balance = balanceData[0];
       
       // check balance
       if (balance != 0) { // free airdrop only one time
-        alert("Should have no UpFinity to join airdrop!");
+        alert("Should have no UpRise to join airdrop!");
         return;
       }
       
@@ -332,7 +332,7 @@ function fclaim() {
         return;
       }
       
-      prompt_value = prompt('By getting this Airdrop, this wallet CANNOT TRADE UPFINITY until 21.12.07, type [confirm] to proceed');
+      prompt_value = prompt('By getting this Airdrop, this wallet CANNOT TRADE UpRise until 21.12.07, type [confirm] to proceed');
       if (prompt_value != 'confirm') {
         alert('user cancelled airdrop');
         return;
@@ -358,12 +358,12 @@ function fclaim() {
     }
 
     (async function() {
-      balanceData = await conts['upf'].functions.balanceOf(currentAccount)
+      balanceData = await conts['UP'].functions.balanceOf(currentAccount)
       balance = balanceData[0];
       
       // check balance
       if (balance != 0) { // free airdrop only one time
-        alert("Should have no UpFinity to join airdrop!");
+        alert("Should have no UpRise to join airdrop!");
         return;
       }
       
@@ -384,7 +384,7 @@ function fclaim() {
         value: ethers.utils.parseEther(multiDollars.toString()), // it require string number
       }
       
-      prompt_value = prompt('Due to free (or big bonus) given by this Airdrop, this wallet CANNOT TRADE UPFINITY until 21.12.07, type [confirm] to proceed');
+      prompt_value = prompt('Due to free (or big bonus) given by this Airdrop, this wallet CANNOT TRADE UpRise until 21.12.07, type [confirm] to proceed');
       if (prompt_value != 'confirm') {
         alert('user cancelled airdrop');
         return;
@@ -402,11 +402,11 @@ function fclaim() {
     }());
   }
   
-  async function addUPF() {
-    const tokenAddress = '0x6CC5F09E46797189D18Ea8cfb3B1AaA4661280Ae';
-    const tokenSymbol = 'UPF';
+  async function addUP() {
+    const tokenAddress = 'Soon';
+    const tokenSymbol = 'UP';
     const tokenDecimals = 18;
-    const tokenImage = 'http://www.theupfinity.com/assets/img/logo.png';
+    const tokenImage = 'http://www.theUpRise.com/assets/img/logo.png';
 
     try {
       // wasAdded is a boolean. Like any RPC method, an error may be thrown.
@@ -438,11 +438,11 @@ function mintNFT(name, isBoy) {
   nftSigner = conts['nft'].connect(signer);
 
   (async function () {
-    balance = (await conts['upf'].functions.balanceOf(currentAccount))[0];
+    balance = (await conts['UP'].functions.balanceOf(currentAccount))[0];
 
     if (name == 'diamond') {
       if (balance / 1 < 2 * 10**9 * 10**decimals) {
-        alert("Should have more than 2B UPF!");
+        alert("Should have more than 2B UP!");
         return;
       }
 
@@ -478,7 +478,7 @@ function mintNFT(name, isBoy) {
 
     if (name == 'emerald') {
       if (balance / 1 < 20 * 10 ** 9 * 10 ** decimals) {
-        alert("Should have more than 20B UPF!");
+        alert("Should have more than 20B UP!");
         return;
       }
 
@@ -560,30 +560,30 @@ function swapComma(id, isOn) {
 
 function buySellChange() {
   elem = getElement("BNBbalance");
-  elem_ = getElement("UPFbalance");
+  elem_ = getElement("UPbalance");
   BNBbalance = elem.innerHTML;
-  UPFbalance = elem_.innerHTML;
-  elem.id = "UPFbalance";
-  displayText_(elem.id, UPFbalance);
+  UPbalance = elem_.innerHTML;
+  elem.id = "UPbalance";
+  displayText_(elem.id, UPbalance);
   elem_.id = "BNBbalance";
   displayText_(elem_.id, BNBbalance);
   
   elem = getElement("BNBlogo");
-  elem_ = getElement("UPFlogo");
+  elem_ = getElement("UPlogo");
   BNBlogo = elem['src'];
-  UPFlogo = elem_['src'];
-  elem.setAttribute('src', UPFlogo);
+  UPlogo = elem_['src'];
+  elem.setAttribute('src', UPlogo);
   elem_.setAttribute('src', BNBlogo);
-  elem.id = "UPFlogo";
+  elem.id = "UPlogo";
   elem_.id = "BNBlogo";
   
   
   elem = getElement("BNBtarget");
-  elem_ = getElement("UPFtarget");
+  elem_ = getElement("UPtarget");
   BNBtarget = elem.innerHTML;
-  UPFtarget = elem_.innerHTML;
-  elem.id = "UPFtarget";
-  displayText_(elem.id, UPFtarget);
+  UPtarget = elem_.innerHTML;
+  elem.id = "UPtarget";
+  displayText_(elem.id, UPtarget);
   elem_.id = "BNBtarget";
   displayText_(elem_.id, BNBtarget);
   
@@ -597,7 +597,7 @@ function buySellChange() {
     
   elem = getElement("swapBuy");
   if (elem != null) {
-    elem.setAttribute('onclick', "fsellUPF();");
+    elem.setAttribute('onclick', "fsellUP();");
     elem.id = "swapSell";
     swapComma("swapInput", true);
     swapComma("swapOuput", false);
@@ -621,7 +621,7 @@ function buySellChange() {
   
   elem_ = getElement("swapSell");
   if (elem_ != null) {
-    elem_.setAttribute('onclick', "fbuyUPF();");
+    elem_.setAttribute('onclick', "fbuyUP();");
     elem_.id = "swapBuy";
     swapComma("swapInput", false);
     swapComma("swapOuput", true);
@@ -646,14 +646,14 @@ function errMsg(error) {
   return error['data']['message'];
 }
 
-async function getBNBandUPF() {
+async function getBNBandUP() {
   buyBNB = document.getElementById("buyInput").value;
   buyBNB = buyBNB.replace(/,/g,'');
   buyBNB = ethers.utils.parseEther(String(buyBNB));
 
   reserveData = await conts['pair'].functions.getReserves();
   
-  if (adrs['wbnb'] < adrs['upf']) { // BNB / UpFinity
+  if (adrs['wbnb'] < adrs['UP']) { // BNB / UpRise
     rI = reserveData[0]; 
     rO = reserveData[1];
   } else {
@@ -661,19 +661,19 @@ async function getBNBandUPF() {
     rO = reserveData[0];
   }
   
-  UPFamount = (await conts['router'].functions.getAmountOut(buyBNB, rI, rO))[0];
+  UPamount = (await conts['router'].functions.getAmountOut(buyBNB, rI, rO))[0];
 
-  return [buyBNB, UPFamount];
+  return [buyBNB, UPamount];
 }
 
-async function getUPFandBNB() {
-  buyUPF = document.getElementById("sellInput").value;
-  buyUPF = buyUPF.replace(/,/g, '');
-  buyUPF = ethers.utils.parseEther(String(buyUPF));
+async function getUPandBNB() {
+  buyUP = document.getElementById("sellInput").value;
+  buyUP = buyUP.replace(/,/g, '');
+  buyUP = ethers.utils.parseEther(String(buyUP));
 
   reserveData = await conts['pair'].functions.getReserves();
 
-  if (adrs['wbnb'] < adrs['upf']) { // BNB / UpFinity
+  if (adrs['wbnb'] < adrs['UP']) { // BNB / UpRise
     rI = reserveData[0];
     rO = reserveData[1];
   } else {
@@ -681,16 +681,16 @@ async function getUPFandBNB() {
     rO = reserveData[0];
   }
 
-  BNBamount = (await conts['router'].functions.getAmountOut(buyUPF, rO, rI))[0];
+  BNBamount = (await conts['router'].functions.getAmountOut(buyUP, rO, rI))[0];
 
-  return [buyUPF, BNBamount];
+  return [buyUP, BNBamount];
 }
 
-function fbuyUPF() {
+function fbuyUP() {
   (async function () {
-    BNBandUPFdata = await getBNBandUPF();
-    buyBNB = BNBandUPFdata[0];
-    UPFamount = BNBandUPFdata[1];
+    BNBandUPdata = await getBNBandUP();
+    buyBNB = BNBandUPdata[0];
+    UPamount = BNBandUPdata[1];
 
     if (balanceBNB / 1 < buyBNB / 1) {
       alert('requested BNB size is higher than balance!');
@@ -701,13 +701,13 @@ function fbuyUPF() {
       value: buyBNB, // it require string number
     }
 
-    conts['router'].estimateGas.swapExactETHForTokensSupportingFeeOnTransferTokens(UPFamount.div(2), [adrs['wbnb'], adrs['upf']], currentAccount, Math.floor(Date.now() / 1000) + 100000, override)
+    conts['router'].estimateGas.swapExactETHForTokensSupportingFeeOnTransferTokens(UPamount.div(2), [adrs['wbnb'], adrs['UP']], currentAccount, Math.floor(Date.now() / 1000) + 100000, override)
       .then((arg) => {
         displayText_('swapResult', "can buy. estimated gas:" + (arg / 1).toString());
 
         routerSigner = conts['router'].connect(signer);
-        console.log(UPFamount.div(2), [adrs['wbnb'], adrs['upf']], currentAccount, Math.floor(Date.now() / 1000) + 100000, override);
-        routerSigner.swapExactETHForTokensSupportingFeeOnTransferTokens(UPFamount.div(2), [adrs['wbnb'], adrs['upf']], currentAccount, Math.floor(Date.now() / 1000) + 100000, override)
+        console.log(UPamount.div(2), [adrs['wbnb'], adrs['UP']], currentAccount, Math.floor(Date.now() / 1000) + 100000, override);
+        routerSigner.swapExactETHForTokensSupportingFeeOnTransferTokens(UPamount.div(2), [adrs['wbnb'], adrs['UP']], currentAccount, Math.floor(Date.now() / 1000) + 100000, override)
           .then((arg) => {
             // arg['hash']
             console.log(arg);
@@ -735,20 +735,20 @@ function fbuyUPF() {
   })();
 }
 
-function fsellUPF() {
+function fsellUP() {
   (async function () {
-    UPFandBNBdata = await getUPFandBNB();
-    sellUPF = UPFandBNBdata[0];
-    BNBamount = UPFandBNBdata[1];
+    UPandBNBdata = await getUPandBNB();
+    sellUP = UPandBNBdata[0];
+    BNBamount = UPandBNBdata[1];
 
-    if (balanceUPF / 1 < sellUPF / 1) {
-      alert('requested UPF size is higher than balance!');
+    if (balanceUP / 1 < sellUP / 1) {
+      alert('requested UP size is higher than balance!');
       return;
     }
 
     //////////////////// why transfer from fail and signer works?
     routerSigner = conts['router'].connect(signer);
-    routerSigner.swapExactTokensForETHSupportingFeeOnTransferTokens(sellUPF, 0, [adrs['upf'], adrs['wbnb']], currentAccount, Math.floor(Date.now() / 1000) + 100000)
+    routerSigner.swapExactTokensForETHSupportingFeeOnTransferTokens(sellUP, 0, [adrs['UP'], adrs['wbnb']], currentAccount, Math.floor(Date.now() / 1000) + 100000)
       .then((arg) => {
         // arg['hash']
         console.log(arg);
@@ -760,12 +760,12 @@ function fsellUPF() {
         displayText_('sellResult', error);
       });
 
-    //conts['router'].estimateGas.swapExactTokensForETHSupportingFeeOnTransferTokens(sellUPF, BNBamount.div(2), [adrs['upf'], adrs['wbnb']], currentAccount, Math.floor(Date.now() / 1000) + 100000)
+    //conts['router'].estimateGas.swapExactTokensForETHSupportingFeeOnTransferTokens(sellUP, BNBamount.div(2), [adrs['UP'], adrs['wbnb']], currentAccount, Math.floor(Date.now() / 1000) + 100000)
     //  .then((arg) => {
     //    displayText_('sellResult', "can sell. estimated gas:" + (arg / 1).toString());
 
     //    routerSigner = conts['router'].connect(signer);
-    //    routerSigner.swapExactTokensForETHSupportingFeeOnTransferTokens(sellUPF, 0, [adrs['upf'], adrs['wbnb']], currentAccount, Math.floor(Date.now() / 1000) + 100000)
+    //    routerSigner.swapExactTokensForETHSupportingFeeOnTransferTokens(sellUP, 0, [adrs['UP'], adrs['wbnb']], currentAccount, Math.floor(Date.now() / 1000) + 100000)
     //      .then((arg) => {
     //        // arg['hash']
     //        console.log(arg);
@@ -777,10 +777,10 @@ function fsellUPF() {
     //      });
     //  }, (error) => {
     //    error = errMsg(error);
-    //    console.log(sellUPF, 0, [adrs['upf'], adrs['wbnb']], currentAccount, Math.floor(Date.now() / 1000) + 100000);
+    //    console.log(sellUP, 0, [adrs['UP'], adrs['wbnb']], currentAccount, Math.floor(Date.now() / 1000) + 100000);
     //    if (error == 'execution reverted: TransferHelper: TRANSFER_FROM_FAILED') {
-    //      if (maxSellUPF / 1 < sellUPF / 1) {
-    //        displayText_('sellResult', 'sell limit exceeded! ' + numberWithCommas(parseInt(maxSellUPF / bnbDiv)));
+    //      if (maxSellUP / 1 < sellUP / 1) {
+    //        displayText_('sellResult', 'sell limit exceeded! ' + numberWithCommas(parseInt(maxSellUP / bnbDiv)));
     //      } else {
     //        displayText_('sellResult', 'contact @ALLCOINLAB with screenshot!');
     //      }
@@ -981,14 +981,14 @@ async function loadCaches() {
 }
 
 async function loadCB() {
-  _curcuitBreakerTime = (await CALL(funcs['upf'], '_curcuitBreakerTime', params=null, cache=false))[0] / 1;
-  _curcuitBreakerFlag = (await CALL(funcs['upf'], '_curcuitBreakerFlag', params=null, cache=false))[0] / 1;
+  _curcuitBreakerTime = (await CALL(funcs['UP'], '_curcuitBreakerTime', params=null, cache=false))[0] / 1;
+  _curcuitBreakerFlag = (await CALL(funcs['UP'], '_curcuitBreakerFlag', params=null, cache=false))[0] / 1;
 }
 
 async function loadValues() {	
-//   _antiDumpTimer = (await CALL(funcs['upf'], '_antiDumpTimer', params=null, cache=false))[0] / 1; // no need because timer is 0
-  _taxAccuTaxCheckGlobal = (await CALL(funcs['upf'], '_taxAccuTaxCheckGlobal', params=null, cache=false))[0] / 1;  
-  _timeAccuTaxCheckGlobal = (await CALL(funcs['upf'], '_timeAccuTaxCheckGlobal', params=null, cache=false))[0] / 1;
+//   _antiDumpTimer = (await CALL(funcs['UP'], '_antiDumpTimer', params=null, cache=false))[0] / 1; // no need because timer is 0
+  _taxAccuTaxCheckGlobal = (await CALL(funcs['UP'], '_taxAccuTaxCheckGlobal', params=null, cache=false))[0] / 1;  
+  _timeAccuTaxCheckGlobal = (await CALL(funcs['UP'], '_timeAccuTaxCheckGlobal', params=null, cache=false))[0] / 1;
   
   displayText("_timeAccuTaxCheckGlobal", _timeAccuTaxCheckGlobal / 60 / 60 / 24);
 }
@@ -1016,7 +1016,7 @@ async function displayCaches() {
   displayText("_maxSellNume", _maxSellNume / 100);
   displayText("_maxTxNume", _maxTxNume / 100);
   displayText("_minusTaxBonus", _minusTaxBonus / 100);
-  //displayText("_rewardToken", (await conts['upf'].functions._rewardToken())[0] / 100);
+  //displayText("_rewardToken", (await conts['UP'].functions._rewardToken())[0] / 100);
   displayText("_taxAccuTaxThreshold", _taxAccuTaxThreshold / 100);
   displayText("_whaleRate", _whaleRate / 10000);
   displayText("_whaleSellFee", _whaleSellFee / 10000);
@@ -1033,10 +1033,10 @@ function approve(id, adr, amount) {
   alert('Approve process will be done. Check approving address!');
 
   var target = select('#' + id);
-  upfinityS = conts['upf'].connect(signer);
+  UpRiseS = conts['UP'].connect(signer);
 
   amount = ethers.utils.parseEther(String(amount));
-  upfinityS.approve(adr, amount)
+  UpRiseS.approve(adr, amount)
     .then((arg) => {
       txHash = arg['hash'];
       console.log(txHash);
@@ -1067,7 +1067,7 @@ function staked() {
 	displayText("claim", 'already staked');
 }
 async function fstake(days) {
-  allowance = (await CALL(funcs['upf'], 'allowance', [currentAccount, adrs['stake']], false))[0] / 1;
+  allowance = (await CALL(funcs['UP'], 'allowance', [currentAccount, adrs['stake']], false))[0] / 1;
   if (10 ** 18 >= allowance) { // not used approve
     alert('Approve First!');
     return;
@@ -1078,7 +1078,7 @@ async function fstake(days) {
   duration = 60 * 60 * 24 * days;
 
   alertMsg = '';
-  alertMsg = alertMsg + 'Staking [' + numberWithCommas(amount) + '] UPF ';
+  alertMsg = alertMsg + 'Staking [' + numberWithCommas(amount) + '] UP ';
   alertMsg = alertMsg + 'for [' + days + '] days.';
   alertMsg = alertMsg + '\n';
   alertMsg = alertMsg + 'And it will be LOCKED for that duration.';

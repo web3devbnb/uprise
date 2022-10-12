@@ -28,8 +28,8 @@
   margin-bottom: 2.5rem;
 }
 
-.upfinityName {
-    color:#28A745;
+.UpRiseName {
+    color:#0DCAF0;
 }
 
 .introDescription p {
@@ -43,7 +43,7 @@
     font-size: 1rem;
     margin-left: 1rem;
     background: transparent;
-    box-shadow:#28A745 0px 1px 4px;
+    box-shadow:#0DCAF0 0px 1px 4px;
     outline: none;
     border: none;
     text-align: center;
@@ -349,7 +349,7 @@
         height: 12px;
         font-size: 5px;
         margin-left: 0.5rem;
-        box-shadow:#28A745 0px 1px 3px;
+        box-shadow:#0DCAF0 0px 1px 3px;
     }
 
     .walletButtons {

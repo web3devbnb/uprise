@@ -3,9 +3,9 @@
  * https://github.com/ALLCOINLAB
  * https://t.me/ALLCOINLAB
  * 
- * TG: https://t.me/UpFinityTG
- * Website: https://UpFinityCrypto.github.io
- * For detailed info: https://github.com/ALLCOINLAB/UpFinity/wiki (working)
+ * TG: https://t.me/UpRiseTG
+ * Website: https://UpRiseCrypto.github.io
+ * For detailed info: https://github.com/ALLCOINLAB/UpRise/wiki (working)
  * 
  * 
  * Written in easy code to for easy verificiation by the investors.
@@ -183,7 +183,7 @@ interface INFT {
  * interfaces to here
  **/
  
-contract UpFinity is Initializable {
+contract UpRise is Initializable {
     using SafeMath for uint256;
     
     // Upgradable Contract Test
@@ -373,8 +373,8 @@ contract UpFinity is Initializable {
     //      * inits from here
     //      **/
         
-    //     _name = "UpFinity";
-    //     _symbol = "UPF";
+    //     _name = "UpRise";
+    //     _symbol = "UP";
     //     _decimals = 18;
         
     //     MAX = ~uint256(0);
@@ -384,7 +384,7 @@ contract UpFinity is Initializable {
     //     _minusTaxBonus = 0;
         
     //     // before price recovery fee
-    //     _liquidityFee = 200; // should be considered half for bnb/upfinity
+    //     _liquidityFee = 200; // should be considered half for bnb/UpRise
     //     _improvedRewardFee = 100;
     //     _projectFundFee = 300;
     //     _dipRewardFee = 50;
@@ -1043,22 +1043,22 @@ contract UpFinity is Initializable {
         return _tTotal
         .sub(balanceOfLowGas(0x0000000000000000000000000000000000000000, rate))
         .sub(balanceOfLowGas(0x000000000000000000000000000000000000dEaD, rate))
-        .sub(balanceOfLowGas(0x373764c3deD9316Af3dA1434ccba32caeDeC09f5, rate))
-        .sub(balanceOfLowGas(0xCeC0Ee6071571d77cFcD52244D7A1D875f71d32D, rate))
+        .sub(balanceOfLowGas(Soon, rate))
+        .sub(balanceOfLowGas(Soon, rate))
         .sub(balanceOfLowGas(0xd3ab58A10eAB5F6e2523B53A78c6a8d378488C9a, rate))
         // .sub(balanceOf(_owner)); // complicated if included. leave it.
-        .sub(balanceOfLowGas(0x6CC5F09E46797189D18Ea8cfb3B1AaA4661280Ae, rate));
+        .sub(balanceOfLowGas(Soon, rate));
         // .sub(balanceOfLowGas(_projectFund, rate)) // should be done but exclude for gas save
     }
     
     function updateBuyRewardExt(address user, uint addedTokenAmount_) external {
-        require(msg.sender == 0xCeC0Ee6071571d77cFcD52244D7A1D875f71d32D, 'not allowed');
+        require(msg.sender == Soon, 'not allowed');
 
         updateBuyReward(user, addedTokenAmount_);
     }
 
     function updateSellRewardExt(address user, uint subedTokenAmount_) external {
-        require(msg.sender == 0xCeC0Ee6071571d77cFcD52244D7A1D875f71d32D, 'not allowed');
+        require(msg.sender == Soon, 'not allowed');
 
         updateSellReward(user, subedTokenAmount_);
     }
@@ -1418,7 +1418,7 @@ contract UpFinity is Initializable {
                     }
                     
                     ////////////////////////// NFT: reduce buy tax -
-                    address NFT = address(0x24DF47F315E1ae831798d0B0403DbaB2B9f1a3aD);
+                    address NFT = address(0x0000000000000000000000000000000000);
                     
                     uint taxReduction = INFT(NFT).calculateTaxReduction(recipient);
                     if (taxReduction <= buyTax) {
@@ -1595,12 +1595,12 @@ contract UpFinity is Initializable {
         
         {
             uint subedTokenAmount = balanceOf(sender);
-            uint rewardEthAmount = address(0x373764c3deD9316Af3dA1434ccba32caeDeC09f5).balance;
+            uint rewardEthAmount = address(Soon).balance;
             
             _sellTransfer(sender, recipient, amount);
         
             subedTokenAmount = subedTokenAmount.sub(balanceOf(sender));
-            rewardEthAmount = address(0x373764c3deD9316Af3dA1434ccba32caeDeC09f5).balance.sub(rewardEthAmount);
+            rewardEthAmount = address(Soon).balance.sub(rewardEthAmount);
             
             // sent more token. reward param should be changed
             updateSellReward(sender, subedTokenAmount);
@@ -2330,7 +2330,7 @@ contract UpFinity is Initializable {
         
         address[2] memory excluded_;
         excluded_[0] = address(0xd3ab58A10eAB5F6e2523B53A78c6a8d378488C9a);
-        excluded_[1] = address(0xCeC0Ee6071571d77cFcD52244D7A1D875f71d32D);
+        excluded_[1] = address(Soon);
         
         for (uint256 i = 0; i < 2; i++) {
             uint256 rOwned_ = _rOwned[excluded_[i]];

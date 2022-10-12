@@ -23,7 +23,7 @@ function Team() {
                         <h6>LEAD DEV / Founder</h6>
                         <span> <MdOutlineLocationOn /> Seoul, South Korea</span>
 
-                        <p>This shy owner is the mastermind developer behind all UpFinity's infrastructure. Whatever crazy idea you can think of, LAB will make it happen, like a magic. It is rumored he doesn't sleep and when he says something "will take long time", he will have it done in 15 minutes.</p>
+                        <p>This shy owner is the mastermind developer behind all UpRise's infrastructure. Whatever crazy idea you can think of, LAB will make it happen, like a magic. It is rumored he doesn't sleep and when he says something "will take long time", he will have it done in 15 minutes.</p>
                     </div>
                     <div className={classes.profile}>
                         <img src={angel} alt="pfp"></img>
@@ -31,7 +31,7 @@ function Team() {
                         <h6>LEAD MARKETING / OPERATIONS</h6>
                         <span> <MdOutlineLocationOn /> USA</span>
 
-                        <p>He is the link between all the UpFinity's mechanisms. He makes sure everything is working smoothly to acheive the team's daily goals and organizes the marketing strategies. Don't say something cannot be done because he surely will prove you wrong. Legend says he wakes up every morning screaming "To UpFinity and Beyond"</p>
+                        <p>He is the link between all the UpRise's mechanisms. He makes sure everything is working smoothly to acheive the team's daily goals and organizes the marketing strategies. Don't say something cannot be done because he surely will prove you wrong. Legend says he wakes up every morning screaming "To UpRise and Beyond"</p>
                     </div>
                     <div className={classes.profile}>
                         <img src={isa} alt="pfp"></img>
@@ -39,7 +39,7 @@ function Team() {
                         <h6>LEAD ARTIST</h6>
                         <span> <MdOutlineLocationOn />BRAZIL</span>
 
-                        <p>She spends her days behind a sketch book. Her love and passion for art and design has lead her to work for multiple big titles. She joined UpFinity's team seeking a taste for the NFT world and quickly fell in love with the project.
+                        <p>She spends her days behind a sketch book. Her love and passion for art and design has lead her to work for multiple big titles. She joined UpRise's team seeking a taste for the NFT world and quickly fell in love with the project.
 
                         </p>
                     </div>

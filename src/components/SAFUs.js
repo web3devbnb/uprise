@@ -14,7 +14,7 @@ function SAFUs() {
     <section id="SAFUs">
       <div className="section-title">
         <h2>SAFU Proofs</h2>
-        <p>More details in <a href="https://upfinity.gitbook.io/upfinity/main-infos/liquidity-lock">whitepaper</a></p>
+        <p>More details in <a href="https://UpRise.gitbook.io/UpRise/main-infos/liquidity-lock">whitepaper</a></p>
       </div>
 
       <div className="row">
@@ -28,18 +28,18 @@ function SAFUs() {
         <div className="col-12 col-md-6 text-justify content">
           <h3>Audit</h3>
           <div>
-            <a href="https://github.com/UpFinityCrypto/UpFinityCrypto.github.io/blob/675dd736fc7b87eecfb4330bc86b051718b9cca9/UpFinity.sol" target="_tab">
+            <a href="https://github.com/UpRiseCrypto/UpRiseCrypto.github.io/blob/675dd736fc7b87eecfb4330bc86b051718b9cca9/UpRise.sol" target="_tab">
               view in github (Audited Version)
             </a>
           </div>
           <div>
-            <a href="https://github.com/UpFinityCrypto/UpFinityCrypto.github.io/releases/tag/audit" target="_tab">
+            <a href="https://github.com/UpRiseCrypto/UpRiseCrypto.github.io/releases/tag/audit" target="_tab">
               Auditted Tag
             </a>
           </div>
           <div>
             <a href="https://dessertswap.finance/idverified.html" target="_tab">
-              view in dessertswap (Search UpFinity!)
+              view in dessertswap (Search UpRise!)
               <img src="assets/img/safu/audited.png"/>
             </a>
           </div>
