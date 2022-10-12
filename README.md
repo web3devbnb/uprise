@@ -1,1 +1,2 @@
-# This is the github for the UpFinity Website
+# This is the github for the UpRise Website
+# uprise
