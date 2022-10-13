@@ -38,15 +38,15 @@ export function Header() {
             <a className="nav-link scrollto" >Play<i className="bi bi-chevron-down"></i></a>
             <ul>
               <li><Link to="/p2egame">P2E Game</Link></li>
-              <li><a href="https://UpRise.gitbook.io/UpRise/ecosystem/utility/autoshill/how-to-use-autoshill">Lotttery <span>(Soon!)</span></a></li>
-              <li><a href="https://UpRise.gitbook.io/UpRise/ecosystem/utility/autoshill/how-to-use-autoshill">Trade Competition <span>(Soon!)</span></a></li>
+              <li><a href="/">Lotttery <span>(Soon!)</span></a></li>
+              <li><a href="/">Trade Competition <span>(Soon!)</span></a></li>
               <li><a>UP & DOWN  <span>(Soon!)</span></a></li>
             </ul>
           </li>
           <li className="dropdown">
             <a  className="nav-link scrollto" >Utility<i className="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="https://UpRise.gitbook.io/UpRise/ecosystem/utility/autoshill/how-to-use-autoshill">Shilling Competition <span>(Free 25$!)</span></a></li>
+              <li><a href="/">Shilling Competition <span>(Free 25$!)</span></a></li>
               <li><a href="/">Coin Vote <span>(Soon!)</span></a></li>
             </ul>
           </li>
@@ -63,8 +63,8 @@ export function Header() {
             <ul>
               <li><a href="https://t.me/UpriseTG">Telegram <span>(JOIN!)</span></a></li>
               <li><a href="https://reddit.com/u/Uprise">Reddit <span>(SUB!)</span></a></li>
-              <li><a href="https://UpRise.gitbook.io/UpRise/ecosystem/utility/autoshill/how-to-use-autoshill">Twitter <span>(Follow!)</span></a></li>
-              <li><a href="https://UpRise.gitbook.io/UpRise/ecosystem/utility/autoshill/how-to-use-autoshill">Announcements <span>(Follow!)</span></a></li>
+              <li><a href="/">Twitter <span>(Follow!)</span></a></li>
+              <li><a href="/">Announcements <span>(Follow!)</span></a></li>
             </ul>
           </li>
           <i id="curStatus" className="bi" title='
