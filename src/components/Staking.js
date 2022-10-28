@@ -33,7 +33,7 @@ function Staking() {
         </div>
         <p>Staking Contract Address</p>
         <a href="https://bscscan.com/address0x622aecc4287dc6341bdfb0c18c580c54043ce287" target="_tab">
-          Soon
+          0x622aecc4287dc6341bdfb0c18c580c54043ce287
         </a>
       </div>
 

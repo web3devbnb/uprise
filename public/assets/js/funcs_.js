@@ -409,11 +409,11 @@ runPersonals['Buy'] = async function runSwapPersonal() {
   approveStake = select("a#approveRouter");
   if (approveStake) {
     if (10 ** 18 < allowance) { // used approve
-      approveStake.classList.add('button-soon');
+      approveStake.classList.add('button-0x622aecc4287dc6341bdfb0c18c580c54043ce287');
       approveStake.onclick = function () { return false; };
       displayText('approveRouter', 'Approved');
     } else {
-      approveStake.classList.remove('button-soon');
+      approveStake.classList.remove('button-0x622aecc4287dc6341bdfb0c18c580c54043ce287');
       approveStake.onclick = function () { approve(adrs['router'], 10 ** 15); };
       displayText('approveRouter', 'Approve Pancakeswap to sell');
     }
@@ -448,11 +448,11 @@ runPersonals['Staking'] = async function runStakingPersonal() {
   allowance = (await CALL(funcs['UP'], 'allowance', [currentAccount, adrs['stake']], false))[0] / 1;
   approveStake = select("a#approveStake");
   if (10 ** 18 < allowance) { // used approve
-    approveStake.classList.add('button-soon');
+    approveStake.classList.add('button-0x622aecc4287dc6341bdfb0c18c580c54043ce287');
     approveStake.onclick = function () { return false; };
     displayText('approveStake', 'Approved');
   } else {
-    approveStake.classList.remove('button-soon');
+    approveStake.classList.remove('button-0x622aecc4287dc6341bdfb0c18c580c54043ce287');
     approveStake.onclick = function () { approve('approveStake', adrs['stake'], 10 ** 15); };
     displayText('approveStake', 'Approve to Stake');
   }
@@ -480,7 +480,7 @@ runPersonals['Staking'] = async function runStakingPersonal() {
     stakeDurations = ['stake1d', 'stake7d', 'stake28d'];
     for (stakeDuration of stakeDurations) {
       stakeDuration_ = select('a#' + stakeDuration);
-      stakeDuration_.classList.add('button-soon');
+      stakeDuration_.classList.add('button-0x622aecc4287dc6341bdfb0c18c580c54043ce287');
       stakeDuration_.onclick = function () { return false; }
       displayText(stakeDuration, 'Staked: ' + String(numberWithCommas(_stakedAmounts)));
     }
@@ -489,11 +489,11 @@ runPersonals['Staking'] = async function runStakingPersonal() {
     // displayText('_stakedTimeLeft', parseInt(_stakedTimeLeft / 60 / 60));
     unstake = select('a#unstake');
     if (0 < _stakedTimeLeft) {
-      unstake.classList.add('button-soon');
+      unstake.classList.add('button-0x622aecc4287dc6341bdfb0c18c580c54043ce287');
       unstake.onclick = function () { return false; }
       displayText('unstake', 'Unstake after: ' + String(parseInt(_stakedTimeLeft / 60 / 60) + 1) + ' hours');
     } else {
-      unstake.classList.remove('button-soon');
+      unstake.classList.remove('button-0x622aecc4287dc6341bdfb0c18c580c54043ce287');
       unstake.onclick = function () { funstake(); }
       displayText('unstake', 'Unstake');
     }
@@ -501,7 +501,7 @@ runPersonals['Staking'] = async function runStakingPersonal() {
     stakeDurations = ['stake1d', 'stake7d', 'stake28d'];
     for (stakeDuration of stakeDurations) {
       stakeDuration_ = select('a#' + stakeDuration);
-      stakeDuration_.classList.remove('button-soon');
+      stakeDuration_.classList.remove('button-0x622aecc4287dc6341bdfb0c18c580c54043ce287');
     }
     displayText('stake1d', '7 days (APY 20%) (Reward: 3M)');
     displayText('stake7d', '28 days (APY 40%) (Reward: 28M)');
@@ -520,11 +520,11 @@ runPersonals['Lottery'] = async function RunLotteryPersonal() {
   approveStake = select("a#approveLottery");
   if (approveStake) {
     if (10 ** 18 < allowance) { // used approve
-      approveStake.classList.add('button-soon');
+      approveStake.classList.add('button-0x622aecc4287dc6341bdfb0c18c580c54043ce287');
       approveStake.onclick = function () { return false; };
       displayText('approveLottery', 'Approved');
     } else {
-      approveStake.classList.remove('button-soon');
+      approveStake.classList.remove('button-0x622aecc4287dc6341bdfb0c18c580c54043ce287');
       approveStake.onclick = function () { approve('approveLottery', adrs['lottery'], 10 ** 15); };
       displayText('approveLottery', 'Approve Lottery to buy ticket');
     }

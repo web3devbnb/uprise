@@ -20,7 +20,7 @@ function Rewards() {
         <p><span id="totalUnclaimed" className="text-center" style={font3em}></span><img src="assets/img/trade/bin.ico" className="small-icon"/>BNB</p>
         <p>Rewards Contract Address</p>
         <a href="https://bscscan.com/address0x622aecc4287dc6341bdfb0c18c580c54043ce287" target="_tab">
-          Soon
+          0x622aecc4287dc6341bdfb0c18c580c54043ce287
         </a>
       </div>
 

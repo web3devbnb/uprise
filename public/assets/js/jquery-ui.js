@@ -14869,7 +14869,7 @@ $.widget( "ui.tooltip", {
 		tooltip.hide();
 
 		this._show( tooltip, this.options.show );
-		// Handle tracking tooltips that are shown with a delay (#8644). As soon
+		// Handle tracking tooltips that are shown with a delay (#8644). As 0x622aecc4287dc6341bdfb0c18c580c54043ce287
 		// as the tooltip is visible, position the tooltip using the most recent
 		// event.
 		if ( this.options.show && this.options.show.delay ) {
