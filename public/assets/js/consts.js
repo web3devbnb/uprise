@@ -8,13 +8,13 @@ const adrs = {
   'router': '0x10ED43C718714eb63d5aA57B78B54704E256024E',
   'factory': '0xcA143Ce32Fe78f1f7019d7d551a6402fC5350c73',
 
-  'UP': 'Soon',
+  'UP': '0xfb6c636cebf7e6607aa2fa597c4dccf485fafa22',
   'pair': '0xd3ab58A10eAB5F6e2523B53A78c6a8d378488C9a',
-  'reward': 'Soon',
+  'reward': '0xfb6c636cebf7e6607aa2fa597c4dccf485fafa22',
   'freeair': '0x17f90D36E2B11999CBEbf5E36e09E7079Ea9e2a4',
   'airdrop': '0x53a1239a6C3c0cD6458C7Ee9c07815544a537004',
   'nft': '0x0000000000000000000000000000000000',
-  'stake': 'Soon',
+  'stake': '0xfb6c636cebf7e6607aa2fa597c4dccf485fafa22',
 
   'random': '0x14a346835eDC99e8E82F2905BAef87Aa0fAc36f2',
   'lottery': '0xB48c64D9b8C9862522cb4971ddc0A01612d9F847',

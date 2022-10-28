@@ -20,7 +20,7 @@ function SAFUs() {
       <div className="row">
         <div className="col-12 col-md-6 text-justify content">
           <h3>Doxxed</h3>
-          <a href="https://www.dessertswap.finance/dessertdoxxed.html" target="_tab">
+          <a href="" target="_tab">
             view in dessertdoxxed
             <img src="assets/img/safu/doxxed.png"/>
           </a>
@@ -28,7 +28,7 @@ function SAFUs() {
         <div className="col-12 col-md-6 text-justify content">
           <h3>Audit</h3>
           <div>
-            <a href="https://github.com/UpRiseCrypto/UpRiseCrypto.github.io/blob/675dd736fc7b87eecfb4330bc86b051718b9cca9/UpRise.sol" target="_tab">
+            <a href="https://github.com/UpriseToken/contracts/blob/main/UPRISE.sol" target="_tab">
               view in github (Audited Version)
             </a>
           </div>

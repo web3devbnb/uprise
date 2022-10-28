@@ -32,7 +32,7 @@ function Staking() {
           </div>  
         </div>
         <p>Staking Contract Address</p>
-        <a href="https://bscscan.com/address/Soon" target="_tab">
+        <a href="https://bscscan.com/address0x622aecc4287dc6341bdfb0c18c580c54043ce287" target="_tab">
           Soon
         </a>
       </div>

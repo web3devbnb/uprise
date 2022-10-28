@@ -13,7 +13,7 @@ function SwapPage() {
         <h1>UpRise</h1>
         <p>Take advantage of every feature and utility in a world-wide ecosystem.</p>
         <p>JOIN US, Take Care Of Yourself</p>
-        <p>Launching Soon!</p>
+        <p>LAUNCHED!!</p>
         <p>Check <a href="https://t.me/UpriseTG">Telegram</a> and <a href="">Wsite!</a></p>
         <div className="redirect">
           <h2 className="button"><Link to="/main">Enter</Link></h2>

@@ -26,9 +26,9 @@ function Donations() {
           </div>
           <div>
             <span className="wrap-address">
-              <a href="https://bscscan.com/address/0x4e73d1e3C4639ea23D3CBEb66A09eEb086EE8Cb8" target="_tab">0x4e73d1e3C4639ea23D3CBEb66A09eEb086EE8Cb8
+              <a href="https://bscscan.com/address/0x2Bd34754dc98256b22883a262cE81D1Ae3a8671e!" target="_tab">0x2Bd34754dc98256b22883a262cE81D1Ae3a8671e!
               </a>
-              <a id="copyDonationAdr" className="button scrollto" onClick={() => {window.copyAdr('copyDonationAdr', '0x4e73d1e3C4639ea23D3CBEb66A09eEb086EE8Cb8');}}>
+              <a id="copyDonationAdr" className="button scrollto" onClick={() => {window.copyAdr('copyDonationAdr', '0x2Bd34754dc98256b22883a262cE81D1Ae3a8671e!');}}>
                 Copy
               </a>
             </span>

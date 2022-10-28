@@ -52,14 +52,14 @@ function Footer() {
           <Link to="/donations">Click Here to fund our Project</Link>
         </div>
         <div className="copyright">
-          <p>Official email: <strong>theUpRise@gmail.com</strong></p>
-          <p>secondary email: <strong>theUpRise@protonmail.com</strong></p>
+          <p>Official email: <strong>UpRise@gmail.com</strong></p>
+          <p>secondary email: <strong>UpRise@protonmail.com</strong></p>
         </div>
         <div className="copyright">
           &copy; Copyright <strong><span>UpRise</span></strong>. All Rights Reserved
         </div>
         <div className="credits">
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          Designed by UPRISE
         </div>
         <div id="cvalue"></div>
         <div id="ctime"></div>

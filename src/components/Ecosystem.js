@@ -130,7 +130,7 @@ function Ecosystem() {
               <h2>NFT Farming</h2>
               <h6>Put your NFTs to work!</h6>
               <p>Earn passive income by staking your NFTs</p>
-              <p><Link id="MysteryLink" to="" className="button button-soon scrollto">Coming Soon</Link></p>
+              <p><Link id="MysteryLink" to="" className="button button-soon scrollto">Coming 0xfb6c636cebf7e6607aa2fa597c4dccf485fafa22</Link></p>
             </div>
           </div>
           <div className="col-12 col-lg-4 text-justify content">
@@ -139,7 +139,7 @@ function Ecosystem() {
               <h2>SAFU Checker</h2>
               <h6>don't get rugpulled again!</h6>
               <p>A top of the line honeypot and rugpull scanner FREE for UP holders</p>
-              <p><Link id="MysteryLink" to="" className="button button-soon scrollto">Coming Soon</Link></p>
+              <p><Link id="MysteryLink" to="" className="button button-soon scrollto">Coming 0xfb6c636cebf7e6607aa2fa597c4dccf485fafa22</Link></p>
             </div>
           </div>
           <div className="col-12 col-lg-4 text-justify content">
@@ -148,7 +148,7 @@ function Ecosystem() {
               <h2>UP Store</h2>
               <h6>Shop your favorite brands</h6>
               <p>A blockchain store with all cryptocurrencies accepted, with discount for UP holders</p>
-              <p><Link id="MysteryLink" to="" className="button button-soon scrollto">Coming Soon</Link></p>
+              <p><Link id="MysteryLink" to="" className="button button-soon scrollto">Coming 0xfb6c636cebf7e6607aa2fa597c4dccf485fafa22</Link></p>
             </div>
           </div>
           <div className="col-12 col-lg-4 text-justify content">

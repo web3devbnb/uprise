@@ -627,7 +627,7 @@ async function runGlobal(path) {
       curStatus.title = `
       <p id="cbStatus" class="white">Circuit Breaker ON</p>
       <p id="cbDuration" class="white"></p>
-      <a href="https://UpRise.gitbook.io/UpRise/special-features/advanced-tax-algorithms#stabilizing-the-market-more">
+      <a href="#">
         <i class="bi bi-info-circle text-primary" style="font-size: 25px;"></i>
       </a>
       `;
@@ -642,7 +642,7 @@ async function runGlobal(path) {
       curStatus.title = `
       <p id="cbStatus" class="white">Circuit Breaker OFF</p>
       <p id="cbDuration" class="white"></p>
-      <a href="https://UpRise.gitbook.io/UpRise/special-features/advanced-tax-algorithms#stabilizing-the-market-more">
+      <a href="#">
         <i class="bi bi-info-circle text-primary" style="font-size: 25px;"></i>
       </a>
       `;

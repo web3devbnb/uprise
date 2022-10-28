@@ -32,7 +32,7 @@ function Listings() {
             <img src="https://static.coingecko.com/s/coingecko-logo-d13d6bcceddbb003f146b33c2f7e8193d72b93bb343d38e392897c3df3e78bdd.png" style={widthFull}/>
         </div>
         <div className="col-6 col-lg-2">
-          <a href="https://charts.bogged.finance/Soon" target="_tab">
+          <a href="https://charts.bogged.finance0x622aecc4287dc6341bdfb0c18c580c54043ce287" target="_tab">
             <img src="https://global-uploads.webflow.com/60f997cdf2dbe758a7f94a3b/61141e5427c1a057eb719535_Bogged%20Finance%20Logo%20White.svg" style={widthFull}/>
           </a>
           </div>

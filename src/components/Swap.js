@@ -153,10 +153,10 @@ export function Buy() {
               </div>
               <div>
                 You could also buy at:
-                <a id="PanCakeSwapLink" href="https://pancakeswap.finance/swap?outputCurrency=Soon" className="scrollto">
+                <a id="PanCakeSwapLink" href="https://pancakeswap.finance/swap?outputCurrency=0xfb6c636cebf7e6607aa2fa597c4dccf485fafa22" className="scrollto">
                   <img src="assets/img/trade/pcs_100.ico" style={width30px}/>
                 </a>
-                <a id="PoocoinSwapLink" href="https://poocoin.app/swap/?outputCurrency=Soon" className="scrollto">
+                <a id="PoocoinSwapLink" href="https://poocoin.app/swap/?outputCurrency=0xfb6c636cebf7e6607aa2fa597c4dccf485fafa22" className="scrollto">
                   <img src="assets/img/trade/poo_100.png" style={width30px}/>
                 </a>
               </div>
@@ -165,7 +165,7 @@ export function Buy() {
                 <a id="DextoolsChartLink" href="https://www.dextools.io/app/bsc/pair-explorer/0xd3ab58a10eab5f6e2523b53a78c6a8d378488c9a" className="scrollto">
                   <img src="assets/img/trade/dext_100.ico" style={width30px}/>
                 </a>
-                <a id="PoocoinChartLink" href="https://poocoin.app/tokens/Soon" className="scrollto">
+                <a id="PoocoinChartLink" href="https://poocoin.app/tokens/0xfb6c636cebf7e6607aa2fa597c4dccf485fafa22" className="scrollto">
                   <img src="assets/img/trade/poo_100.png" style={width30px}/>
                 </a>
                 <div><Link to="/fiat">Buy BNB/BUSD with Fiat!</Link></div>
@@ -305,10 +305,10 @@ export function Sell() {
               {/*</div>*/}
               {/*<div>*/}
               {/*  You could also buy at:*/}
-              {/*  <a id="PanCakeSwapLink" href="https://pancakeswap.finance/swap?outputCurrency=Soon" className="scrollto">*/}
+              {/*  <a id="PanCakeSwapLink" href="https://pancakeswap.finance/swap?outputCurrency=0xfb6c636cebf7e6607aa2fa597c4dccf485fafa22" className="scrollto">*/}
               {/*    <img src="assets/img/trade/pcs.ico" style={width30px} />*/}
               {/*  </a>*/}
-              {/*  <a id="PoocoinSwapLink" href="https://poocoin.app/swap/?outputCurrency=Soon" className="scrollto">*/}
+              {/*  <a id="PoocoinSwapLink" href="https://poocoin.app/swap/?outputCurrency=0xfb6c636cebf7e6607aa2fa597c4dccf485fafa22" className="scrollto">*/}
               {/*    <img src="assets/img/trade/poo.png" style={width30px} />*/}
               {/*  </a>*/}
               {/*</div>*/}
@@ -317,7 +317,7 @@ export function Sell() {
               {/*  <a id="DextoolsChartLink" href="https://www.dextools.io/app/bsc/pair-explorer/0xd3ab58a10eab5f6e2523b53a78c6a8d378488c9a" className="scrollto">*/}
               {/*    <img src="assets/img/trade/dext.ico" style={width30px} />*/}
               {/*  </a>*/}
-              {/*  <a id="PoocoinChartLink" href="https://poocoin.app/tokens/Soon" className="scrollto">*/}
+              {/*  <a id="PoocoinChartLink" href="https://poocoin.app/tokens/0xfb6c636cebf7e6607aa2fa597c4dccf485fafa22" className="scrollto">*/}
               {/*    <img src="assets/img/trade/poo.png" style={width30px} />*/}
               {/*  </a>*/}
               {/*  <div><Link to="/fiat">Buy BNB/BUSD with Fiat!</Link></div>*/}

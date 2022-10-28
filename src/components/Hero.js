@@ -43,18 +43,18 @@ function Hero() {
               <nav id="navbar" className="navbar" style={{ display: "inline-flex" }}>
                 <ul className="flex">
                   <li className="dropdown">
-                    <a  className="nav-link scrollto" href="https://bscscan.com/address/Soon" target="_tab">
+                    <a  className="nav-link scrollto" href="https://bscscan.com/address/0xfb6c636cebf7e6607aa2fa597c4dccf485fafa22" target="_tab">
                       <div className="underline font-size">
-                        Soon
+                        0xfb6c636cebf7e6607aa2fa597c4dccf485fafa22
                       </div>
-                      {/*<a id="UpRiseAdr" href="https://bscscan.com/address/Soon" target="_tab">*/}
+                      {/*<a id="UpRiseAdr" href="https://bscscan.com/address/0xfb6c636cebf7e6607aa2fa597c4dccf485fafa22" target="_tab">*/}
                     </a>
                     {/*<ul>*/}
                     {/*  <li>*/}
                     {/*    <div className="row">*/}
                     {/*      <div style={{ display: "inline-block", overflow: "hidden" }}>Click</div>*/}
                     {/*      <div style={{ display: "inline-block", overflow: "hidden" }}>to copy address</div>*/}
-                    {/*      <a  id="copyUpRiseAdr" className="" onClick={() => window.copyAdr('copyUpRiseAdr', 'Soon')}>*/}
+                    {/*      <a  id="copyUpRiseAdr" className="" onClick={() => window.copyAdr('copyUpRiseAdr', '0xfb6c636cebf7e6607aa2fa597c4dccf485fafa22')}>*/}
                     {/*        here*/}
                     {/*      </a>*/}
                           
@@ -66,7 +66,7 @@ function Hero() {
               </nav>
               <div className="row">
                 <div className="col-6">
-                  <a id="copyUpRiseAdr" className="button scrollto" onClick={() => window.copyAdr('copyUpRiseAdr', 'Soon')}>
+                  <a id="copyUpRiseAdr" className="button scrollto" onClick={() => window.copyAdr('copyUpRiseAdr', '0xfb6c636cebf7e6607aa2fa597c4dccf485fafa226c636cebf7e6607aa2fa597c4dccf485fafa22')}>
                     Copy Address
                   </a>
                 </div>

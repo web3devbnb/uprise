@@ -403,7 +403,7 @@ function fclaim() {
   }
   
   async function addUP() {
-    const tokenAddress = 'Soon';
+    const tokenAddress = '0xfb6c636cebf7e6607aa2fa597c4dccf485fafa22';
     const tokenSymbol = 'UP';
     const tokenDecimals = 18;
     const tokenImage = 'http://www.theUpRise.com/assets/img/logo.png';
