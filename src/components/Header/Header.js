@@ -38,15 +38,24 @@ export function Header() {
             <a className="nav-link scrollto" >Play<i className="bi bi-chevron-down"></i></a>
             <ul>
               <li><Link to="/p2egame">P2E Game</Link></li>
+<<<<<<< HEAD
               <li><a href="#">Lotttery <span>(Soon!)</span></a></li>
               <li><a href="#">Trade Competition <span>(Soon!)</span></a></li>
+=======
+              <li><a href="/">Lotttery <span>(Soon!)</span></a></li>
+              <li><a href="/">Trade Competition <span>(Soon!)</span></a></li>
+>>>>>>> f726ffe55bc374b2f6dad41916317dd13abcd022
               <li><a>UP & DOWN  <span>(Soon!)</span></a></li>
             </ul>
           </li>
           <li className="dropdown">
             <a  className="nav-link scrollto" >Utility<i className="bi bi-chevron-down"></i></a>
             <ul>
+<<<<<<< HEAD
               <li><a href="#">Shilling Competition <span>(Free 25$!)</span></a></li>
+=======
+              <li><a href="/">Shilling Competition <span>(Free 25$!)</span></a></li>
+>>>>>>> f726ffe55bc374b2f6dad41916317dd13abcd022
               <li><a href="/">Coin Vote <span>(Soon!)</span></a></li>
             </ul>
           </li>
@@ -63,8 +72,13 @@ export function Header() {
             <ul>
               <li><a href="https://t.me/UpriseTG">Telegram <span>(JOIN!)</span></a></li>
               <li><a href="https://reddit.com/u/Uprise">Reddit <span>(SUB!)</span></a></li>
+<<<<<<< HEAD
               <li><a href="#">Twitter <span>(Follow!)</span></a></li>
               <li><a href="#">Announcements <span>(Follow!)</span></a></li>
+=======
+              <li><a href="/">Twitter <span>(Follow!)</span></a></li>
+              <li><a href="/">Announcements <span>(Follow!)</span></a></li>
+>>>>>>> f726ffe55bc374b2f6dad41916317dd13abcd022
             </ul>
           </li>
           <i id="curStatus" className="bi" title='
